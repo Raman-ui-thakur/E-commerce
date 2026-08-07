@@ -1,0 +1,3348 @@
+<style>
+    div#comp-ms5cqlv0,
+    #comp-ms5cqlv0,
+    #comp-ms5cqlv0 {
+        height: 100vh !important;
+        margin-bottom: 0 !important;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <!-- Optional Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --font-inter: "Inter", sans-serif;
+            --font-bebas: "Bebas Neue", sans-serif;
+            --font-outfit: "Outfit", sans-serif;
+            --font-releway: "Raleway", sans-serif;
+            --font-jetbrains: "JetBrains Mono", monospace;
+            --font-montserret: "Montserrat", sans-serif;
+
+            --black-color: #000000;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-inter);
+            position: relative;
+            z-index: 0;
+        }
+
+        /* =========================
+   Typography
+========================= */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-releway);
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+        }
+
+        h1,
+        h2 {
+            font-weight: 800;
+        }
+
+        p,
+        span,
+        li,
+        label,
+        button,
+        input,
+        textarea,
+        select {
+            font-family: var(--font-outfit);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 16px;
+            line-height: 24.3px;
+
+        }
+
+        a,
+        button {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .custom_container {
+            max-width: 1240px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .section_common_padding {
+            padding-inline: 15px !important;
+        }
+
+        .common_flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background-image: url("https://static.wixstatic.com/media/8b026f_cc16bced2703401b84a02bb0246815ed~mv2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 10px 16px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 118%;
+            box-shadow: 0px 0px 0px 0px #2EE6C900;
+            font-family: var(--font-montserret);
+            color: #0D1024;
+            border-radius: 60px;
+            transition: all ease-in-out 0.45s;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 118%;
+            box-shadow: 0px 0px 0px 0px #2EE6C900;
+            font-family: var(--font-montserret);
+            color: #0D1024;
+            border-radius: 60px;
+            transition: all ease-in-out 0.45s;
+        }
+
+        .btn:hover {
+            background-color: #ffffff33;
+            transition: all ease-in-out 0.45s;
+        }
+
+        /* header css start */
+        .main_header {
+            margin-top: 20px;
+        }
+
+        .main_header .navbar {
+            padding: 6px 33px 5px 45px;
+            background: #FFFFFF33;
+            border-radius: 50px;
+            /* border: 1px solid var(--black-color); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .main_header .navbar .logo-container {
+            max-width: 85px;
+            width: 100%;
+        }
+
+        .main_header .navbar .logo-container img {
+            width: 100%;
+        }
+
+        .main_header .nav-menu {
+            list-style: none;
+            gap: 34px;
+        }
+
+        .main_header .nav-menu li a {
+            font-family: var(--font-releway);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            padding-block: 10px;
+            color: #ffffff;
+        }
+
+        .main_header .navigation_part {
+            gap: 56px;
+        }
+
+        /* header css end */
+
+
+        /* Market ticket section css start */
+        .market-ticker {
+            padding: 10px;
+            background: var(--black-color);
+            margin-top: 15px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .ticker-item {
+            display: flex !important;
+            gap: 8px;
+        }
+
+        .ticker-item .ticker-name {
+            font-family: var(--font-inter);
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 120%;
+            color: #EEF1FB;
+        }
+
+        .ticker-item .ticker-icon {
+            width: 13px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ticker-item .ticker-icon img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .ticker-item .ticker-change {
+            font-family: var(--font-inter);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 120%;
+        }
+
+        .ticker-item .ticker-change.positive {
+            color: #5EEAD4;
+        }
+
+        .ticker-item .ticker-change.negative {
+            color: #C084FC;
+        }
+
+        .ticket_slider .slick-track {
+            display: flex !important;
+            align-items: center;
+        }
+
+        .ticket_slider .slick-slide {
+            width: auto !important;
+            margin: 0 20px;
+        }
+
+        .ticket_slider .slick-list {
+            overflow: hidden;
+        }
+
+        .ticker-wrapper {
+            max-width: 1800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Market ticket section css end */
+
+
+        /* hero section css start */
+        .hero_section {
+            background-image: url("https://static.wixstatic.com/media/8b026f_e2268e4f054743f6a7990d5488734314~mv2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 155px 0 104px;
+            margin-top: -155px;
+            position: relative;
+            z-index: -1;
+        }
+
+        .hero-wrapper {
+            display: grid;
+            grid-template-columns: 604px 590px;
+            gap: 68px;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        span.hero-badge {
+            font-family: var(--font-inter);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 7px 19px;
+            background: #ffffff1f;
+            color: #ffffff;
+            border-radius: 50px;
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+
+        .hero-title {
+            font-family: var(--font-releway);
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 72px;
+            letter-spacing: -1.8px;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        span.gradient-text {
+            font-family: var(--font-releway);
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 72px;
+            letter-spacing: -1.8px;
+            background-image: linear-gradient(90deg, #4FE6E3 1%, #AD4AFF 50%);
+            color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-family: var(--font-outfit);
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 28px;
+            color: #A6ADC7;
+            margin-bottom: 68px;
+        }
+
+        .hero-buttons a {
+            display: inline-block;
+        }
+
+        .hero-buttons {
+            gap: 16px;
+        }
+
+        .hero-buttons .btn-secondary {
+            color: #ffffff;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+        }
+
+        .hero-stats {
+            max-width: 445px;
+            width: 100%;
+            margin-left: 132px;
+            gap: 37px;
+            margin-top: 69px;
+        }
+
+        .stat-item h3 {
+            background-image: linear-gradient(120deg, #2EE6C9 13.4%, #9B5DE5 86.6%);
+            color: transparent;
+            background-clip: text;
+            font-family: var(--font-outfit);
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 129%;
+        }
+
+        .stat-item p {
+            font-family: var(--font-montserret);
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+
+        .hero_section .section-bottom_img {
+            position: absolute;
+            bottom: 69px;
+            width: 100%;
+            left: 0;
+        }
+
+        .floating-card {
+            background: #FFFFFF21;
+            padding: 14px 20px;
+            border-radius: 16px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #FFFFFF;
+        }
+
+        .floating-card small {
+            font-family: Raleway;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .floating-card strong {
+            font-family: Outfit;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0%;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .floating-card {
+            background: #FFFFFF21;
+            padding: 14px 20px;
+            border-radius: 16px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #FFFFFF;
+        }
+
+        .floating-card small {
+            font-family: Raleway;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .floating-card strong {
+            font-family: Outfit;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0%;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .floating-card .card-icon {
+            width: 33px;
+            height: 33px;
+        }
+
+        .floating-card .card-icon img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .floating-card.top-card {
+            position: absolute;
+            top: 15px;
+            right: -17px;
+        }
+
+        .image-wrapper {
+            position: relative;
+        }
+
+        .floating-card.bottom-card {
+            position: absolute;
+            bottom: 12px;
+            left: 69px;
+        }
+
+        /* hero section css end */
+
+
+        /* what we get css start */
+        .features-section {
+            padding: 57px 0 129px;
+            background-image: url('https://static.wixstatic.com/media/8b026f_c972b911d759488699f68415e4d5b40a~mv2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .section-header {
+            max-width: 831px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 67px;
+        }
+
+        .section-badge {
+            padding: 9px 33px;
+            background: #2EE6C91A;
+            border: 1px solid #2EE6C959;
+            width: fit-content;
+            display: block;
+            margin: 0 auto;
+            border-radius: 60px;
+            font-family: var(--font-bebas);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.61px;
+            text-transform: uppercase;
+            color: #0E8C77;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: var(--font-releway);
+            font-size: 52px;
+            line-height: 128%;
+            letter-spacing: -1.38px;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            max-width: 668px;
+            width: 100%;
+            margin: 0 auto;
+            font-family: var(--font-outfit);
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 25.6px;
+            color: #969696;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 28px;
+        }
+
+        .feature-grid .feature-card {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0px 1px 2px 0px #1017330A;
+            box-shadow: 0px 20px 40px -24px #1017332E;
+        }
+
+        .card-content .card-title {
+            font-family: var(--font-releway);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 125%;
+            letter-spacing: -0.18px;
+            margin-bottom: 8px;
+        }
+
+        .card-image {
+            height: 190px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-image .card-number {
+            background: #FFFFFF24;
+            border: 1px solid #FFFFFF59;
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            font-family: var(--font-jetbrains);
+            font-weight: 500;
+            font-size: 13.6px;
+            line-height: 132%;
+            width: 36px;
+            height: 36px;
+            display: block;
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .feature-grid .feature-card .card-content {
+            padding: 19px 18px 23px 26px;
+        }
+
+        .feature-grid .feature-card .card-content .card-description {
+            color: #6E6E6E;
+        }
+
+        .feature-grid .feature-card .card-content .card-tag {
+            padding: 5px 23px;
+            display: block;
+            width: fit-content;
+            background: #2EE6C91A;
+            font-family: var(--font-bebas);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #0E8C77;
+            border-radius: 60px;
+            margin-top: 25px;
+        }
+
+        /* what we get css end */
+
+
+        /* community section css start */
+        .community-section {
+            padding: 88px 0 99px;
+            background-image: url('https://static.wixstatic.com/media/8b026f_e36726ce59494c859043c74cf57362ba~mv2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .community-section .section-header {
+            color: #ffffff;
+        }
+
+        .community-section .section-header {
+            color: #ffffff;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
+
+        .testimonial-grid .testimonial-card {
+            border: 1px solid #FFFFFF17;
+            background: #FFFFFF0A;
+            backdrop-filter: blur(10px);
+            padding: 29px 15px 25px 27px;
+            border-radius: 16px;
+        }
+
+        .testimonial-grid .testimonial-card .rating {
+            color: #5EEAD4;
+            margin-bottom: 18px;
+            line-height: 1;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 13.6px;
+            line-height: 118%;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-grid .testimonial-card .testimonial-text {
+            font-family: var(--font-outfit);
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24.3px;
+            color: #FFFFFF;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-grid .testimonial-card .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-card .testimonial-author .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Outfit;
+            font-weight: 700;
+            font-size: 15px;
+            background-image: url('https://static.wixstatic.com/media/8b026f_cc16bced2703401b84a02bb0246815ed~mv2.png') !important;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .author-info h4 {
+            font-family: var(--font-outfit);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 118%;
+            color: #EEF1FB;
+        }
+
+        .author-info span {
+            font-family: var(--font-inter);
+            font-weight: 400;
+            font-size: 12.16px;
+            line-height: 123%;
+            color: #6E7691;
+        }
+
+
+        /* community section css end */
+
+        /* mentor section css start */
+        .mentor-section {
+            padding: 105px 0 85px;
+            background-color: #fff;
+        }
+
+        .mentor-section .custom_container {
+            max-width: 1168px;
+        }
+
+        .mentor-section .mentor-wrapper {
+            display: grid;
+            grid-template-columns: 485px 1fr;
+            gap: 44px;
+        }
+
+        .mentor-section .mentor-wrapper .mentor-content {
+            text-align: left;
+            margin: 0;
+        }
+
+        .mentor-section .mentor-wrapper .section-badge {
+            margin: 0 0 34px;
+            padding: 10px 23px;
+        }
+
+        .mentor-section .mentor-wrapper .section-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .mentor-section .mentor-wrapper .section-description {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+
+        .mentor-section .mentor-wrapper blockquote.mentor-quote {
+            background: linear-gradient(120deg, #2EE6C9 13.4%, #9B5DE5 86.6%);
+            color: transparent;
+            background-clip: text;
+            font-family: var(--font-inter);
+            font-weight: 500;
+            font-style: Italic;
+            font-size: 19px;
+            line-height: 27.65px;
+            margin-bottom: 44px;
+        }
+
+        .mentor-image img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .mentor-stats {
+            background: #EBFDFA;
+            padding: 25px 29px 21px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 37px;
+        }
+
+        .mentor-stats h3 {
+            background-image: linear-gradient(120deg, #2EE6C9 13.4%, #9B5DE5 86.6%);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .mentor-stats p {
+            color: #6E6E6E;
+        }
+
+        /* mentor section css end */
+
+        /* membership section css start */
+        .membership_section {
+            background: #F5F6FB;
+            padding: 60px 0 127px;
+        }
+
+        .membership_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .membership_grid .basic_tier_container {
+            padding: 31px 26px 51px 35px;
+            background: #FFFFFF;
+            border: 1px solid #10173314;
+            box-shadow: 0px 20px 40px -28px #10173333;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .tire_header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .basic_tire_content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+
+        .tire_header h5 {
+            color: #4B5170;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 13.12px;
+            line-height: 122%;
+            letter-spacing: 2.05px;
+            text-transform: uppercase;
+        }
+
+        .basic_tire_content h3 {
+            font-family: Raleway;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 125%;
+            letter-spacing: 0%;
+        }
+
+        .basic_tire_content p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 21.3px;
+            letter-spacing: 0%;
+            color: #6E6E6E;
+        }
+
+
+        .card_list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .card_list ul {
+            list-style: none;
+            margin: 36px 0 56px;
+        }
+
+        .card_list ul li {
+            font-family: Outfit;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 122%;
+            color: #0D1024;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card_list ul li:not(:last-child) {
+            margin-bottom: 13px;
+        }
+
+        .card_list ul li:before {
+            content: "\2714";
+            color: #0E8C77;
+        }
+
+        .black_button {
+            opacity: 1;
+            border-radius: 12px;
+            background: #0D1024;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 118%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 14px;
+            font-family: var(--font-montserret);
+            display: block;
+        }
+
+        .primary_btn {
+            opacity: 1;
+            border-radius: 12px;
+            font-family: var(--font-montserret);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 118%;
+            text-align: center;
+            font-family: var(--font-montserret);
+            color: #FFFFFF;
+            display: block;
+        }
+
+        .card_top_btn {
+            position: absolute;
+            top: -12px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: var(--font-outfit);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 125%;
+            letter-spacing: 0.56px;
+            padding: 5px 20px;
+
+        }
+
+        .membership_grid .basic_tier_container.most_popular_card {
+            padding-top: 41px;
+            box-shadow: 0px 30px 60px -24px #9B5DE559;
+        }
+
+        .membership_grid .basic_tier_container.most_popular_card ul {
+            margin-bottom: 24px;
+        }
+
+        /* membership section css end */
+
+
+        /* faq section css start */
+        .faq_main_container {
+            max-width: 760px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .faq-list .faq-item:not(:last-child) {
+            margin-bottom: 14px;
+        }
+
+        .faq-list .faq-item .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 23px 25px 30px;
+            border: 1px solid #FFFFFF17;
+            background: #ffffff1a;
+            border-radius: 14px;
+            color: #fff;
+        }
+
+        .faq-answer p {
+            border: 1px solid #FFFFFF14;
+            background: #FFFFFF05;
+            padding: 18px 20px;
+            font-family: Outfit;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 23.2px;
+            letter-spacing: 1%;
+            color: #636363;
+            border-radius: 14px;
+        }
+
+        .faq-section {
+            background-image: url("https://static.wixstatic.com/media/8b026f_308bce4e6e8647c5896a2eecb26ffdbc~mv2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 0 52px;
+        }
+
+        .faq-section .section-header {
+            color: #fff;
+        }
+
+        .faq-answer.open_field {
+            margin-top: 28px;
+        }
+
+        /* faq section css end */
+
+        /* footer section css start */
+        footer.footer {
+            background: #0A0E1D;
+        }
+
+        footer.footer .custom_container {
+            max-width: 1124px;
+        }
+
+        footer.footer .footer-top {
+            border-top: 1px solid #FFFFFF12;
+            border-bottom: 1px solid #FFFFFF12;
+            padding: 27px 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer.footer .footer-top .footer-logo {
+            width: 85px;
+            height: 64px;
+            border-radius: 11px;
+        }
+
+        footer.footer .footer-top .footer-logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        nav.footer-menu ul {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            list-style: none;
+        }
+
+        nav.footer-menu ul li a {
+            font-family: var(--font-releway);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 25px;
+            font-family: var(--font-releway);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #6E7691;
+        }
+
+        .footer.section_common_padding {
+            padding-bottom: 56px;
+        }
+
+        .feature-grid .feature-card:hover .card-image img {
+            transform: scale(1.1);
+            transition: all ease-in-out 0.45s;
+        }
+
+        .feature-grid .feature-card .card-image img {
+            transition: all ease-in-out 0.45s;
+        }
+
+        .feature-grid .feature-card .card-image .card-number {
+            z-index: 1;
+        }
+
+        /* footer section css end */
+
+
+        .toggle_menu_btn,
+        .close_menu_btn {
+            font-size: 20px;
+            padding: 5px;
+            color: #fff;
+            background: transparent;
+            border: transparent;
+        }
+
+        .close_menu_btn {
+            margin-left: auto;
+            width: 100%;
+            text-align: right;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+
+        .offer-overlay {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity .3s ease, visibility .3s ease;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(3px);
+            z-index: 9;
+            padding: 0 15px;
+        }
+
+        .offer-overlay.show {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .offer-popup {
+            max-width: 650px;
+            width: 100%;
+            background: #fff;
+            padding: 27px;
+            border-radius: 20px;
+            background-image: url('https://static.wixstatic.com/media/8b026f_a463df7c8ee34f71b9bd19ce09db7366~mv2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 4px solid #2FD4C0;
+            position: relative;
+        }
+
+        .offer-popup #closeOffer {
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            background: unset;
+            border: unset;
+            color: #fff;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+
+        .offer-popup #closeOffer:hover {
+            opacity: 1;
+        }
+
+        .offer-badge {
+            width: fit-content;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 100px;
+            background: linear-gradient(90deg, #4FE6E3 1%, #AD4AFF 50%);
+            color: #ffffff;
+            box-shadow:
+                0 0 25px rgba(0, 208, 255, .1);
+        }
+
+
+        .offer-badge span {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-transform: capitalize;
+        }
+
+        .offer-title {
+            text-align: center;
+            color: #ffffff;
+            font-size: 43px;
+            line-height: 1.05;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-family: 'Outfit';
+        }
+
+        .offer-price {
+            display: block;
+            margin-top: 2px;
+            font-size: 55px;
+            font-weight: 800;
+            line-height: 1.5;
+            background-image: linear-gradient(90deg, #4FE6E3 1%, #AD4AFF 50%);
+            color: transparent;
+            background-clip: text;
+            filter:
+                drop-shadow(0 0 18px rgba(0, 214, 255, .25));
+        }
+
+
+        .offer-description {
+            margin: 5px auto 28px;
+            text-align: center;
+            color: #aeb7ca;
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .offer-benefits {
+            margin: 0 auto 20px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            padding-left: 15px;
+        }
+
+        .offer-benefits li {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            color: #e8ecf5;
+        }
+
+        .benefit-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #00e5ff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+
+        .offer-cta {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            border: 0;
+            border-radius: 100px;
+            cursor: pointer;
+            color: #fff;
+            background:
+                linear-gradient(90deg,
+                    #0dd7e8 0%,
+                    #248ce8 48%,
+                    #9545ef 100%);
+            box-shadow:
+                0 12px 40px rgba(0, 181, 255, .2),
+                0 8px 45px rgba(125, 65, 255, .18);
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+            padding: 14px;
+        }
+
+
+        .offer-cta:hover {
+            transform: translateY(-3px);
+            box-shadow:
+                0 15px 50px rgba(0, 202, 255, .28),
+                0 12px 55px rgba(130, 70, 255, .28);
+        }
+
+        .cta-arrow {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+
+        .offer-cta span {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+
+
+        .offer-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 32px;
+            padding-bottom: 6px;
+        }
+
+        .avatar-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 45px;
+            height: 45px;
+            margin-left: -10px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #10152b;
+            background: #1b2238;
+        }
+
+        .avatar:first-child {
+            margin-left: 0;
+        }
+
+        .social-divider {
+            width: 1px;
+            height: 45px;
+            background: rgba(255, 255, 255, .18);
+        }
+
+        .social-copy {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .social-main {
+            color: #e9edf7;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .social-rating {
+            color: #8e98ae;
+            font-size: 13px;
+        }
+
+        .rating-number {
+            color: #00e5dc;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .offer-dismiss {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 8px 15px;
+            border: 0;
+            background: transparent;
+            color: #7e879d;
+            font-size: 13px;
+            cursor: pointer;
+            transition: .25s ease;
+        }
+
+        .offer-dismiss:hover {
+            color: #dce2f0;
+        }
+
+        @media(max-height:700px) {
+            .offer-popup {
+                height: calc(100% - 100px);
+                overflow-y: auto;
+                scrollbar-width: thin;
+            }
+        }
+
+        @media(max-width:767px) {
+            .offer-popup {
+                padding: 20px;
+            }
+
+            .offer-title {
+                font-size: 30px;
+            }
+
+            .offer-title span {
+                font-size: 38px;
+            }
+
+            .offer-badge {
+                margin-bottom: 22px;
+            }
+
+            .offer-description {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            .offer-benefits {
+                padding: 0;
+            }
+
+            .offer-benefits li {
+                align-items: start;
+            }
+
+            .offer-benefits li .benefit-check {
+                padding-top: 8px;
+            }
+
+            .offer-social {
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
+            .offer-social .social-divider {
+                display: none;
+            }
+        }
+
+
+        @media(min-width:850px) {
+
+            .toggle_menu_btn,
+            .close_menu_btn {
+                display: none;
+            }
+
+            .nav-action {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+            }
+
+        }
+
+
+        @media(max-width:1300px) {
+            .hero-wrapper {
+                grid-template-columns: 1fr 1fr;
+                gap: 45px;
+            }
+
+            .hero-title,
+            .hero-title span {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            .hero-title br {
+                display: none;
+            }
+
+            .hero-stats {
+                margin-left: 0;
+                gap: 25px;
+                margin-top: 9px;
+            }
+
+            .hero_section .section-bottom_img {
+                bottom: 33px;
+            }
+
+            .floating-card.top-card {
+                right: 14px;
+            }
+        }
+
+        @media(max-width:1024px) {
+            .hero-wrapper {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .main_header .navbar {
+                padding: 6px 25px;
+            }
+
+            .main_header .nav-menu li a {
+                font-size: 14px;
+            }
+
+            .section-title {
+                font-size: 40px;
+                line-height: 128%;
+            }
+
+            .section-description {
+                font-size: 18px;
+                line-height: 23.6px;
+            }
+
+            .feature-grid,
+            .testimonial-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+
+            .mentor-section .mentor-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .mentor-section .mentor-wrapper .section-badge {
+                margin: 0 0 15px;
+            }
+
+            .mentor-section .mentor-wrapper .mentor-content *,
+            .mentor-section .mentor-wrapper .mentor-content {
+                max-width: 100%;
+            }
+
+            .mentor-image img {
+                max-width: 350px;
+            }
+        }
+
+        @media(max-width:850px) {
+            .navigation_mobile {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                background: #000000;
+                max-width: 320px;
+                width: 100%;
+                height: 100dvh;
+                z-index: 9;
+                transition: all ease-in-out 0.45s;
+            }
+
+            .navigation_mobile.active {
+                left: 0;
+                transition: all ease-in-out 0.45s;
+            }
+
+            .navigation_mobile .nav-menu {
+                flex-direction: column;
+                text-align: left;
+                gap: 0;
+            }
+
+            .navigation_mobile .nav-menu li,
+            .navigation_mobile .nav-menu li a {
+                width: 100%;
+            }
+
+            .navigation_mobile .nav-menu li a {
+                padding: 16px 18px !important;
+                display: block;
+                font-size: 16px;
+                transition: all ease-in-out 0.45s;
+            }
+
+            .navigation_mobile .nav-menu li:not(:last-child) {
+                border-bottom: 1px solid #ffffff2b;
+            }
+
+            .navigation_mobile .nav-menu li a:hover {
+                background: #ffffff36;
+                backdrop-filter: blur(4px);
+                transition: all ease-in-out 0.45s;
+            }
+        }
+
+        @media(max-width:767px) {
+
+            .hero-title,
+            .hero-title span {
+                font-size: 37px;
+                line-height: 45px;
+                margin-bottom: 20px;
+            }
+
+            .hero-description {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+
+            .hero-stats.common_flex {
+                display: none;
+            }
+
+            .hero-wrapper {
+                padding-bottom: 0;
+            }
+
+            .hero-buttons,
+            .mentor-stats {
+                flex-wrap: wrap;
+            }
+
+
+            .features-section,
+            .community-section,
+            .mentor-section,
+            .membership_section,
+            .faq-section {
+                padding-block: 60px;
+            }
+
+            .section-badge {
+                padding: 9px 20px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+                line-height: 110%;
+            }
+
+            .section-description {
+                font-size: 16px;
+                line-height: 23.6px;
+            }
+
+            .section-header {
+                margin-bottom: 40px;
+            }
+
+            .mentor-stats {
+                gap: 25px;
+                padding: 20px;
+            }
+
+            .mentor-section .mentor-wrapper blockquote.mentor-quote {
+                font-size: 16px;
+                line-height: 25.65px;
+            }
+
+            .stat-item h3 {
+                font-size: 25px;
+            }
+
+            .membership_grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-list .faq-item .faq-question {
+                padding: 20px;
+                text-align: left;
+                gap: 10px;
+            }
+
+            .membership_grid .basic_tier_container {
+                padding: 20px;
+            }
+
+            .card_list ul {
+                margin: 25px 0 35px;
+            }
+
+            .black_button,
+            .primary_btn {
+                font-size: 16px;
+            }
+
+            .footer.section_common_padding {
+                padding: 0 15px 50px;
+            }
+
+            footer.footer .footer-top,
+            .footer-bottom,
+            nav.footer-menu ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            nav.footer-menu ul {
+                gap: 20px;
+            }
+
+            .footer-bottom * {
+                font-size: 14px;
+            }
+
+            .testimonial-grid .testimonial-card {
+                padding: 20px;
+            }
+
+            .testimonial-grid .testimonial-card .testimonial-text {
+                margin-bottom: 22px;
+            }
+        }
+
+        @media(max-width:600px) {
+
+            /* join us page css */
+            .features {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            nav.footer-menu ul,
+            .footer-top {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .footer-top {
+                gap: 35px !important;
+                justify-content: start !important;
+                align-items: start !important;
+            }
+
+            nav.footer-menu ul li,
+            nav.footer-menu ul li a {
+                width: 100%;
+            }
+
+        }
+		
+		
+		
+		.savvy-section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    display:inline-block;
+    color:#0d6efd;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:800px;
+    margin:auto;
+    color:#666;
+}
+
+.card{
+    background:#fff;
+    border-radius:16px;
+    padding:40px;
+    margin-bottom:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.box{
+    background:#f7f9fc;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+    border:1px solid #e6e6e6;
+}
+
+.box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.box h4{
+    margin-bottom:10px;
+    color:#0d6efd;
+}
+
+.quote{
+    margin-top:30px;
+    padding:20px;
+    border-left:5px solid #0d6efd;
+    background:#eef5ff;
+    border-radius:8px;
+    font-style:italic;
+    font-size:18px;
+}
+
+.check-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-top:25px;
+}
+
+.check-list div{
+    background:#eef8f0;
+    padding:15px 20px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.mission{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.mission h3,
+.mission p{
+    color:#fff;
+}
+
+.disclaimer{
+    background:#fff7e8;
+    border-left:5px solid #f59e0b;
+}
+
+.disclaimer h3{
+    color:#b45309;
+}
+      .savvy-section h2 {
+    color: #fff;
+}
+
+@media(max-width:768px){
+
+.section-title h2{
+    font-size:30px;
+}
+
+.card{
+    padding:25px;
+}
+
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="main_header section_common_padding">
+        <div class="custom_container">
+            <nav class="navbar">
+
+                <!-- Logo Section -->
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="https://static.wixstatic.com/media/8b026f_ff1a57294ab04902907bac84dc93e668~mv2.png"
+                            alt="Savvy Investors Logo">
+                    </a>
+                </div>
+
+                <div class="navigation_part common_flex">
+                    <!-- Navigation Links -->
+                    <div class="navigation_mobile">
+                        <button class="close_menu_btn"><i class="fa-solid fa-x"></i></button>
+                        <ul class="nav-menu common_flex">
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Community</a>
+                            </li>
+                            <li>
+                                <a href="#">Mentor</a>
+                            </li>
+                            <li>
+                                <a href="#">Plans</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Call-to-Action Button -->
+                    <div class="nav-action">
+                        <a href="#" class="btn-primary">
+                            Start Your Journey
+                        </a>
+                        <button class="toggle_menu_btn"><i class="fa-solid fa-bars-staggered"></i></button>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Market Ticker Section -->
+    <section class="market-ticker">
+
+        <!-- Ticker Container -->
+        <div class="ticker-wrapper ticket_slider">
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">EUR/USD</span>
+                <span class="ticker-change negative">-0.08%</span>
+            </div>
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">BTC/USD</span>
+                <span class="ticker-change positive">+3.41%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">S&amp;P 500</span>
+                <span class="ticker-change positive">+0.62%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">GOLD</span>
+                <span class="ticker-change negative">-0.21%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">GBP/JPY</span>
+                <span class="ticker-change positive">+0.95%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">NIFTY 50</span>
+                <span class="ticker-change positive">+0.77%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">NASDAQ</span>
+                <span class="ticker-change positive">+1.24%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">EUR/USD</span>
+                <span class="ticker-change negative">-0.08%</span>
+            </div>
+
+            <!-- duplicate ticker items -->
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">EUR/USD</span>
+                <span class="ticker-change negative">-0.08%</span>
+            </div>
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">BTC/USD</span>
+                <span class="ticker-change positive">+3.41%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">S&amp;P 500</span>
+                <span class="ticker-change positive">+0.62%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">GOLD</span>
+                <span class="ticker-change negative">-0.21%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">GBP/JPY</span>
+                <span class="ticker-change positive">+0.95%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">NIFTY 50</span>
+                <span class="ticker-change positive">+0.77%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">NASDAQ</span>
+                <span class="ticker-change positive">+1.24%</span>
+            </div>
+
+
+
+            <!-- Ticker Item -->
+            <div class="ticker-item common_flex">
+                <span class="ticker-icon">
+                    <img src="https://static.wixstatic.com/media/8b026f_a3c6cce01c474fcabfb6f4522298f08f~mv2.png"
+                        alt="Chart Icon">
+                </span>
+                <span class="ticker-name">EUR/USD</span>
+                <span class="ticker-change negative">-0.08%</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero_section section_common_padding ">
+        <div class="custom_container">
+            <!-- Hero Content -->
+            <div class="hero-wrapper">
+
+                <!-- Left Content -->
+                <div class="hero-content">
+
+                    <!-- Top Badge -->
+                    <span class="hero-badge animate__animated animate__fadeInUp">
+                        Premium trading education
+                    </span>
+
+                    <!-- Main Heading -->
+                    <h1 class="hero-title animate__animated animate__fadeInUp">
+                        Master the
+                        <span class="gradient-text">Markets</span>:
+                        <br>
+                        Your Journey to
+                        <br>
+                        Consistent
+                        <br>
+                        Trading Starts
+                        <br>
+                        Here.
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="hero-description animate__animated animate__fadeInUp">
+                        Expert mentorship, real-time live trading,
+                        and a community dedicated to your success.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons common_flex animate__animated animate__fadeInUp">
+
+                        <a href="#" class="btn btn-primary">
+                            Start Your Journey →
+                        </a>
+
+                        <a href="#" class="btn btn-secondary">
+                            Explore the curriculum →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Image -->
+                <div class="hero-image">
+
+                    <div class="image-wrapper animate__animated animate__fadeInUp">
+
+                        <!-- Hero Image -->
+                        <img src="https://static.wixstatic.com/media/8b026f_dacf7ca148b34e85adda4a1f6d9e7911~mv2.png"
+                            alt="Trading Room">
+
+                        <!-- Top Floating Card -->
+                        <div class="floating-card top-card">
+
+                            <div class="card-icon">
+                                <img src="https://static.wixstatic.com/media/8b026f_f227f00300b14ad1aa867c3b371c1f88~mv2.png"
+                                    alt="user icon">
+                            </div>
+
+                            <div class="card-content">
+                                <small>In session</small>
+                                <strong>247 traders</strong>
+                            </div>
+
+                        </div>
+
+                        <!-- Bottom Floating Card -->
+                        <div class="floating-card bottom-card">
+
+                            <div class="card-icon">
+                                <img src="https://static.wixstatic.com/media/8b026f_cdd540f9c9de4cb8ba5770dcbc733582~mv2.png"
+                                    alt="graph icon">
+                            </div>
+
+                            <div class="card-content">
+                                <small>In session</small>
+                                <strong>247 traders</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Statistics -->
+            <div class="hero-stats common_flex">
+
+                <div class="stat-item animate__animated animate__fadeInLeft">
+                    <h3>2,400+</h3>
+                    <p>Traders mentored</p>
+                </div>
+
+                <div class="stat-item animate__animated animate__fadeInLeft">
+                    <h3>50+</h3>
+                    <p>Live sessions / year</p>
+                </div>
+
+                <div class="stat-item animate__animated animate__fadeInLeft">
+                    <h3>4.9/5</h3>
+                    <p>Community rating</p>
+                </div>
+
+            </div>
+
+        </div>
+        <img src="https://static.wixstatic.com/media/8b026f_1ccc660e09bb4fcc9f0b31f21ec647ab~mv2.png" alt="line img"
+            class="section-bottom_img">
+    </section>
+
+
+
+
+    <!-- What You Get Section -->
+    <section class="features-section section_common_padding">
+
+        <div class="custom_container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+
+                <!-- Small Label -->
+                <span class="section-badge animate__animated animate__fadeInUp">
+                    What You Get
+                </span>
+
+                <!-- Section Title -->
+                <h2 class="section-title animate__animated animate__fadeInUp">
+                    Everything a Serious Trader Needs
+                </h2>
+
+                <!-- Section Description -->
+                <p class="section-description animate__animated animate__fadeInUp">
+                    A complete system built around guidance, real-time practice,
+                    and structured skill-building — not just theory.
+                </p>
+
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="feature-grid">
+
+                <!-- Card 01 -->
+                <div class="feature-card animate__animated animate__fadeInUp">
+
+                    <!-- Card Image -->
+                    <div class="card-image">
+
+                        <!-- Card Number -->
+                        <span class="card-number">
+                            01
+                        </span>
+
+                        <img src="https://static.wixstatic.com/media/8b026f_d273640275e34ee4b582abfbadfd1fcc~mv2.png"
+                            alt="Personal Mentorship">
+
+                    </div>
+
+                    <!-- Card Content -->
+                    <div class="card-content">
+
+                        <h3 class="card-title">
+                            Personal Mentorship
+                        </h3>
+
+                        <p class="card-description">
+                            Direct guidance from expert traders to fast-track your
+                            progress, with feedback tailored to your own strategy
+                            and risk profile.
+                        </p>
+
+                        <!-- Tag -->
+                        <span class="card-tag">
+                            1:1 Guidance
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 02 -->
+                <div class="feature-card animate__animated animate__fadeInDown">
+
+                    <div class="card-image">
+
+                        <span class="card-number">
+                            02
+                        </span>
+
+                        <img src="https://static.wixstatic.com/media/8b026f_f76a0ee05aa048cc9056f3662bcaf963~mv2.png"
+                            alt="Live Trading Floor">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3 class="card-title">
+                            Live Trading Floor
+                        </h3>
+
+                        <p class="card-description">
+                            Analyze charts and execute trades in real time alongside
+                            our mentors, so you learn decisions as the market
+                            actually moves.
+                        </p>
+
+                        <span class="card-tag">
+                            Real-Time Analysis
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 03  -->
+                <div class="feature-card animate__animated animate__fadeInUp">
+
+                    <div class="card-image">
+
+                        <span class="card-number">
+                            03
+                        </span>
+
+                        <img src="https://static.wixstatic.com/media/8b026f_2b21239830bf4c79804e232659f25a2e~mv2.png"
+                            alt="Comprehensive Curriculum">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3 class="card-title">
+                            Comprehensive Curriculum
+                        </h3>
+
+                        <p class="card-description">
+                            Structured courses covering technical analysis,
+                            trading psychology, and risk management — built
+                            to compound your progress.
+                        </p>
+
+                        <span class="card-tag">
+                            Structured Learning
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Community Testimonials Section -->
+    <section class="community-section section_common_padding">
+
+        <div class="custom_container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+
+                <!-- Section Badge -->
+                <span class="section-badge animate__animated animate__fadeInUp">
+                    Community
+                </span>
+
+                <!-- Section Title -->
+                <h2 class="section-title animate__animated animate__fadeInUp">
+                    Real Results from Our Community
+                </h2>
+
+                <!-- Section Description -->
+                <p class="section-description animate__animated animate__fadeInUp">
+                    A community of traders who show up, stay consistent,
+                    and hold each other accountable.
+                </p>
+
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonial-grid">
+
+                <!-- Testimonial 01 -->
+                <div class="testimonial-card animate__animated animate__fadeInLeft">
+
+                    <!-- Rating -->
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <!-- Review -->
+                    <p class="testimonial-text">
+                        "The live floor sessions changed how I read charts completely.
+                        I finally trade with a plan instead of reacting to every candle."
+                    </p>
+
+                    <!-- Author -->
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">
+                            KW
+                        </div>
+
+                        <div class="author-info">
+                            <h4>Kane William</h4>
+                            <span>Member since 2024</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Testimonial 02 -->
+                <div class="testimonial-card animate__animated animate__fadeInUp">
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="testimonial-text">
+                        "My mentor caught risk mistakes I didn't even know I was making.
+                        That alone paid for the mentorship many times over."
+                    </p>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">
+                            JD
+                        </div>
+
+                        <div class="author-info">
+                            <h4>John D.</h4>
+                            <span>Member since 2024</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Testimonial 03 -->
+                <div class="testimonial-card animate__animated animate__fadeInRight">
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="testimonial-text">
+                        "The curriculum on psychology is what actually fixed my discipline.
+                        I stopped revenge trading within a month."
+                    </p>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">
+                            CP
+                        </div>
+
+                        <div class="author-info">
+                            <h4>Chris Philip</h4>
+                            <span>Member since 2024</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<section class="savvy-section">
+<div class="container">
+
+<div class="section-title">
+<span>About Savvy Investors</span>
+<h2>Trading With Strategy. Discipline. Psychology.</h2>
+<p>
+Savvy Investors is a day trading education and market analysis brand built for traders who want to approach the market with structure, discipline, and confidence.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Approach</h3>
+
+<p>
+At Savvy Investors, we focus on a data-driven and disciplined approach to trading. Every move in the market tells a story, but not every move is worth trading. Our goal is to filter out noise and focus on setups that align with clear strategy, market structure, and risk-to-reward principles.
+</p>
+
+<div class="grid">
+
+<div class="box"><h4>📈 Technical Analysis</h4></div>
+<div class="box"><h4>📊 Market Structure</h4></div>
+<div class="box"><h4>🛡 Risk Management</h4></div>
+<div class="box"><h4>🧠 Trading Psychology</h4></div>
+<div class="box"><h4>🎯 Entry & Exit Planning</h4></div>
+<div class="box"><h4>⚡ Consistency Over Emotion</h4></div>
+<div class="box"><h4>🚀 Long-Term Skill Development</h4></div>
+
+</div>
+
+<div class="quote">
+"Trading is not about chasing every opportunity. It is about waiting for the right opportunity and executing with confidence."
+</div>
+
+</div>
+
+<div class="card">
+<h3>What We Stand For</h3>
+
+<div class="grid">
+
+<div class="box">
+<h4>Discipline First</h4>
+<p>The market rewards patience and punishes emotion. We believe discipline is one of the most important traits a trader can develop.</p>
+</div>
+
+<div class="box">
+<h4>Risk Management Always</h4>
+<p>Protecting capital is the foundation of long-term trading. Every trade should have a plan, a risk level, and a reason behind it.</p>
+</div>
+
+<div class="box">
+<h4>Education Over Hype</h4>
+<p>We do not believe in unrealistic promises. We focus on real education, real strategy, and continuous improvement.</p>
+</div>
+
+<div class="box">
+<h4>Confidence Through Preparation</h4>
+<p>The more prepared you are, the more confident your decisions become. Preparation leads to consistent execution.</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h3>Psychology-Based Trading</h3>
+
+<p>
+The biggest battle in trading is often not against the market—it is against yourself. Many traders lose because they struggle with discipline, patience, fear, greed, revenge trading, or overtrading.
+</p>
+
+<div class="check-list">
+<div>✔ Patience before entering trades</div>
+<div>✔ Confidence without overconfidence</div>
+<div>✔ Discipline to follow a trading plan</div>
+<div>✔ Emotional control during wins & losses</div>
+<div>✔ Avoid revenge trading</div>
+<div>✔ Better decision-making under pressure</div>
+<div>✔ Consistency through routine & structure</div>
+</div>
+
+</div>
+
+<div class="card mission">
+<h3>Our Mission</h3>
+
+<p>
+Our mission is to help traders become more disciplined, educated, and mentally prepared in the financial markets.
+</p>
+
+<p>
+Savvy Investors exists to provide trading education, market insight, and psychology-based guidance for individuals who want to take trading seriously. We are not here to promote gambling. We are here to promote patience, structure, risk management, and calculated execution.
+</p>
+
+</div>
+
+<div class="card disclaimer">
+<h3>Important Disclaimer</h3>
+
+<p>
+Trading involves risk and may not be suitable for all individuals. Savvy Investors provides educational content and market analysis only. We do not provide personalized financial advice, investment recommendations, or guarantee any specific results. Past performance does not guarantee future outcomes. Always trade responsibly and only risk capital you can afford to lose.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+    <!-- Meet Your Mentor Section -->
+    <section class="mentor-section section_common_padding">
+
+        <div class="custom_container">
+
+            <div class="mentor-wrapper">
+
+                <!-- Mentor Image -->
+                <div class="mentor-image animate__animated animate__rotateInUpRight">
+
+                    <img src="https://static.wixstatic.com/media/8b026f_b7c675f53da2476bb63c5fca3182ae4c~mv2.png"
+                        alt="Trading Mentor">
+
+                </div>
+
+                <!-- Mentor Content -->
+                <div class="mentor-content section-header animate__animated animate__rotateInUpLeft">
+
+                    <!-- Section Badge -->
+                    <span class="section-badge">
+                        Meet Your Mentor
+                    </span>
+
+                    <!-- Section Title -->
+                    <h2 class="section-title">
+                        Meet Your Trading Mentor
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="section-description">
+                        With over a decade in the markets — from proprietary desks to
+                        independent trading — our lead mentor built Savvy Investors
+                        to close the gap between trading courses and real, live
+                        decision-making. The focus is never on flashy calls; it's on
+                        repeatable process, risk discipline, and reading the market
+                        on its own terms.
+                    </p>
+
+                    <!-- Quote -->
+                    <blockquote class="mentor-quote">
+                        "Teaching you not just 'what' to trade, but 'how' to survive and thrive."
+                    </blockquote>
+
+                    <!-- Mentor Statistics -->
+                    <div class="mentor-stats">
+
+                        <!-- Stat 1 -->
+                        <div class="stat-item">
+
+                            <h3>10+</h3>
+
+                            <p>Years trading live markets</p>
+
+                        </div>
+
+                        <!-- Stat 2 -->
+                        <div class="stat-item">
+
+                            <h3>2,400+</h3>
+
+                            <p>Students mentored</p>
+
+                        </div>
+
+                        <!-- Stat 3 -->
+                        <div class="stat-item">
+
+                            <h3>3</h3>
+
+                            <p>Asset classes taught</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- membership section  -->
+    <section class="section_common_padding membership_section">
+        <div class="custom_container">
+            <div class="section-header">
+
+                <!-- Small Label -->
+                <span class="section-badge animate__animated animate__fadeInUp">
+                    Membership
+                </span>
+
+                <!-- Section Title -->
+                <h2 class="section-title animate__animated animate__fadeInUp">
+                    Choose Your Path Forward
+                </h2>
+
+                <!-- Section Description -->
+                <p class="section-description animate__animated animate__fadeInUp">
+                    Two tracks, one goal: consistent, disciplined trading. Pick the level of support that fits where you
+                    are.
+                </p>
+
+            </div>
+            <div class="heading_container">
+
+                <div class="membership_grid">
+                    <div class="basic_tier_container animate__animated animate__fadeInLeft">
+
+                        <div class="tire_card">
+                            <div class="tire_header">
+                                <h5>Get Started</h5>
+                                <div class="basic_tire_content">
+                                    <h3>Basic Tier</h3>
+                                    <p>For traders ready to build a real foundation and join a serious community.</p>
+                                </div>
+                            </div>
+
+                            <div class="card_list">
+                                <!-- Curriculum Features List -->
+                                <ul class="curriculum-list">
+
+                                    <li>Full core curriculum access</li>
+
+                                    <li>Weekly community trading floor</li>
+
+                                    <li>Risk management framework</li>
+
+                                    <li>Private community chat access</li>
+
+                                </ul>
+
+
+                            </div>
+                            <a href="" class=" black_button">Enroll Now</a>
+
+                        </div>
+
+
+                    </div>
+                    <div class="basic_tier_container most_popular_card animate__animated animate__fadeInRight">
+                        <a href="" class="  btn-primary primary_btn card_top_btn">Most Popular</a>
+
+                        <div class="tire_card">
+                            <div class="tire_header">
+                                <h5>FULL ACCESS</h5>
+                                <div class="basic_tire_content">
+                                    <h3>Pro Mentorship Tier</h3>
+                                    <p>For traders who want direct mentorship and daily live-market accountability.</p>
+                                </div>
+                            </div>
+
+                            <div class="card_list">
+                                <!-- Premium Tier Features -->
+                                <ul class="premium-tier-list">
+
+                                    <li>Everything in Basic Tier</li>
+
+                                    <li>1:1 personal mentorship sessions</li>
+
+                                    <li>Daily live trading floor access</li>
+
+                                    <li>Trade review &amp; feedback calls</li>
+
+                                    <li>Priority mentor Q&amp;A access</li>
+
+                                </ul>
+
+                            </div>
+                            <a href="" class="  btn-primary primary_btn">Enroll Now</a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section_common_padding">
+
+        <div class="custom_container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+
+                <!-- Badge -->
+                <span class="section-badge animate__animated animate__fadeInUp">
+                    Questions
+                </span>
+
+                <!-- Title -->
+                <h2 class="section-title animate__animated animate__fadeInUp">
+                    Frequently Asked Questions
+                </h2>
+
+                <!-- Description -->
+                <p class="section-description animate__animated animate__fadeInUp">
+                    A community of traders who show up, stay consistent,
+                    and hold each other accountable.
+                </p>
+
+            </div>
+
+            <div class="faq_main_container">
+                <!-- FAQ Accordion -->
+                <div class="faq-list animate__animated animate__fadeInUp">
+
+                    <!-- FAQ Item -->
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>Is this suitable for complete beginners?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Yes. Our curriculum is designed for complete beginners
+                                while still providing advanced insights for experienced traders.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ Item -->
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>How much time do I need to commit each week?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Most students spend 4–8 hours per week attending sessions,
+                                reviewing lessons, and practicing in the markets.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ Item -->
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>Do I get access to the live trading sessions?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Yes. Depending on your membership plan, you'll receive
+                                access to scheduled live trading sessions with mentors.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ Item -->
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>What account size do I need to start trading?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                You can begin learning with any account size. We focus
+                                on proper risk management rather than account balance.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer section_common_padding">
+        <div class="custom_container">
+
+            <!-- Top Section -->
+            <div class="footer-top">
+
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="https://static.wixstatic.com/media/8b026f_43b599bfa94a474ea54812c59def42b4~mv2.png"
+                            alt="Savvy Investors">
+                    </a>
+                </div>
+
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Mentor</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+
+                <div class="copyright">
+                    <p>© 2026 Savvy Investors. All rights reserved.</p>
+                </div>
+
+                <div class="footer-note">
+                    <p>Education &amp; mentorship only. Not financial advice.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- limited time offer popup  -->
+    <!-- Trading Offer Popup -->
+    <div class="offer-overlay" id="offerPopup">
+
+        <div class="offer-popup">
+
+            <!-- Close Button -->
+            <button type="button" class="offer-close" id="closeOffer" aria-label="Close popup">
+                <i class="fa-solid fa-x"></i>
+            </button>
+
+            <!-- Offer Badge -->
+            <div class="offer-badge">
+                <span class="offer-badge-icon"><i class="fa-solid fa-bolt"></i></span>
+                <span>Limited-time offer</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="offer-title">
+                Wait — try everything for
+                <span class="offer-price">$1.</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="offer-description">
+                Get the full trading mentorship experience for 7 days
+                for just $1. Cancel anytime before it ends.
+            </p>
+
+            <!-- Benefits -->
+            <ul class="offer-benefits">
+
+                <li>
+                    <span class="benefit-check"><i class="fa-regular fa-circle-check"></i></span>
+                    <span>Personal mentorship from experienced traders</span>
+                </li>
+
+                <li>
+                    <span class="benefit-check"><i class="fa-regular fa-circle-check"></i></span>
+                    <span>Real-time trading floor + market analysis</span>
+                </li>
+
+                <li>
+                    <span class="benefit-check"><i class="fa-regular fa-circle-check"></i></span>
+                    <span>Complete trading curriculum &amp; risk management</span>
+                </li>
+
+                <li>
+                    <span class="benefit-check"><i class="fa-regular fa-circle-check"></i></span>
+                    <span>Community access &amp; progress insights</span>
+                </li>
+
+            </ul>
+
+            <!-- CTA -->
+            <a href="#" class="offer-cta">
+                <span>Start my $1 trial</span>
+                <span class="cta-arrow">→</span>
+            </a>
+
+            <!-- Social Proof -->
+            <div class="offer-social">
+
+                <div class="avatar-group">
+
+                    <img src="https://i.pravatar.cc/100?img=12" class="avatar" alt="">
+                    <img src="https://i.pravatar.cc/100?img=32" class="avatar" alt="">
+                    <img src="https://i.pravatar.cc/100?img=47" class="avatar" alt="">
+                    <img src="https://i.pravatar.cc/100?img=11" class="avatar" alt="">
+                    <img src="https://i.pravatar.cc/100?img=44" class="avatar" alt="">
+
+                </div>
+
+                <div class="social-divider"></div>
+
+                <div class="social-copy">
+
+                    <div class="social-main">
+                        Join 10,000+ traders learning to trade smarter
+                    </div>
+
+                    <div class="social-rating">
+                        Rated
+                        <span class="rating-number">4.9/5</span>
+                        · cancel anytime
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Dismiss -->
+            <button type="button" class="offer-dismiss" id="dismissOffer">
+                No thanks, maybe later
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ticket_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 6000,
+                cssEase: 'linear',
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                swipe: false,
+                draggable: false,
+                touchMove: false,
+                rtl: false
+            });
+        });
+
+        // =========================================
+        // Smooth FAQ Accordion
+        // =========================================
+
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+
+            const question = item.querySelector(".faq-question");
+            const answer = item.querySelector(".faq-answer");
+            const icon = item.querySelector(".faq-icon");
+
+            // Initial State
+            answer.style.height = "0px";
+            answer.style.marginTop = "0";
+            answer.style.overflow = "hidden";
+            answer.style.transition = "height .35s ease, margin-top .35s ease";
+
+            question.addEventListener("click", () => {
+
+                const isOpen = answer.classList.contains("open_field");
+
+                // Close all FAQs
+                faqItems.forEach((faq) => {
+
+                    const ans = faq.querySelector(".faq-answer");
+                    const ico = faq.querySelector(".faq-icon");
+
+                    ans.style.height = "0px";
+                    ans.style.marginTop = "0";
+                    ans.classList.remove("open_field");
+
+                    ico.textContent = "+";
+
+                });
+
+                // Open clicked FAQ
+                if (!isOpen) {
+
+                    answer.classList.add("open_field");
+                    answer.style.marginTop = "28px";
+                    answer.style.height = answer.scrollHeight + "px";
+
+                    icon.textContent = "−";
+
+                }
+
+            });
+
+        });
+
+        // Open / Toggle Menu
+        document.querySelector('.toggle_menu_btn').addEventListener('click', function () {
+            document.querySelector('.navigation_mobile').classList.toggle('active');
+        });
+
+        // Close Menu
+        document.querySelector('.close_menu_btn').addEventListener('click', function () {
+            document.querySelector('.navigation_mobile').classList.remove('active');
+        });
+
+
+        // limited time offer popup js
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const popup = document.getElementById("offerPopup");
+            const closeBtn = document.getElementById("closeOffer");
+            const dismissBtn = document.getElementById("dismissOffer");
+
+            // Show popup after 4 seconds
+            setTimeout(function () {
+                popup.classList.add("show");
+            }, 4000);
+
+
+            // Close popup
+            function closePopup() {
+                popup.classList.remove("show");
+            }
+
+
+            // Close button
+            closeBtn.addEventListener("click", closePopup);
+
+
+            // No thanks button
+            dismissBtn.addEventListener("click", closePopup);
+
+
+            // Close when clicking outside the popup
+            popup.addEventListener("click", function (event) {
+
+                if (event.target === popup) {
+                    closePopup();
+                }
+
+            });
+
+        });
+
+
+     document.addEventListener("DOMContentLoaded", function () {
+
+    const elements = document.querySelectorAll(".animate__animated");
+
+    const triggerPercent = 0.8; // 80% from top = 20% from bottom
+
+    let lastScrollY = window.scrollY;
+    let direction = "down";
+
+    let downRun = true;
+    let upRun = false;
+
+
+    // ==========================================
+    // GET ANIMATION CLASSES
+    // ==========================================
+
+    elements.forEach(function (el) {
+
+        el._animationClasses = [...el.classList].filter(function (cls) {
+
+            return cls.startsWith("animate__") &&
+                   cls !== "animate__animated" &&
+                   !cls.startsWith("animate__delay-") &&
+                   !cls.startsWith("animate__duration-") &&
+                   !cls.startsWith("animate__repeat-");
+
+        });
+
+        // Remove animation initially
+        el._animationClasses.forEach(function (cls) {
+            el.classList.remove(cls);
+        });
+
+        el._playedDown = false;
+        el._playedUp = false;
+
+    });
+
+
+    // ==========================================
+    // PLAY ANIMATION
+    // ==========================================
+
+    function playAnimation(el) {
+
+        if (!el._animationClasses.length) return;
+
+        // Remove first
+        el._animationClasses.forEach(function (cls) {
+            el.classList.remove(cls);
+        });
+
+        // Force reflow
+        void el.offsetWidth;
+
+        // Add animation
+        requestAnimationFrame(function () {
+
+            el._animationClasses.forEach(function (cls) {
+                el.classList.add(cls);
+            });
+
+        });
+
+    }
+
+
+    // ==========================================
+    // CHECK ANIMATIONS
+    // ==========================================
+
+    function checkAnimations() {
+
+        const currentScrollY = window.scrollY;
+
+        // Detect direction
+        if (currentScrollY > lastScrollY) {
+            direction = "down";
+        }
+        else if (currentScrollY < lastScrollY) {
+            direction = "up";
+        }
+
+        lastScrollY = currentScrollY;
+
+
+        // ======================================
+        // PAGE BOTTOM
+        // ======================================
+
+        const atBottom =
+            window.innerHeight + window.scrollY >=
+            document.documentElement.scrollHeight - 5;
+
+
+        /*
+         * When we reach bottom:
+         * prepare animations for upward scroll.
+         */
+        if (atBottom) {
+
+            downRun = false;
+            upRun = true;
+
+            elements.forEach(function (el) {
+                el._playedUp = false;
+            });
+
+        }
+
+
+        // ======================================
+        // PAGE TOP
+        // ======================================
+
+        const atTop = window.scrollY <= 5;
+
+
+        /*
+         * When we reach top:
+         * prepare animations for downward scroll.
+         */
+        if (atTop) {
+
+            upRun = false;
+            downRun = true;
+
+            elements.forEach(function (el) {
+                el._playedDown = false;
+            });
+
+        }
+
+
+        // ======================================
+        // TRIGGER POSITION
+        // ======================================
+
+        const triggerPoint =
+            window.innerHeight * triggerPercent;
+
+
+        // ======================================
+        // EACH ELEMENT
+        // ======================================
+
+        elements.forEach(function (el) {
+
+            const rect = el.getBoundingClientRect();
+
+
+            /*
+             * Element's top has reached
+             * the bottom 20% of viewport.
+             */
+            const reachedTrigger =
+                rect.top <= triggerPoint &&
+                rect.bottom > 0;
+
+
+            if (!reachedTrigger) return;
+
+
+            // ==================================
+            // TOP → BOTTOM
+            // ==================================
+
+            if (direction === "down" && downRun) {
+
+                if (!el._playedDown) {
+
+                    playAnimation(el);
+
+                    el._playedDown = true;
+
+                }
+
+            }
+
+
+            // ==================================
+            // BOTTOM → TOP
+            // ==================================
+
+            if (direction === "up" && upRun) {
+
+                if (!el._playedUp) {
+
+                    playAnimation(el);
+
+                    el._playedUp = true;
+
+                }
+
+            }
+
+        });
+
+    }
+
+
+    // ==========================================
+    // SMOOTH SCROLL
+    // ==========================================
+
+    let ticking = false;
+
+    window.addEventListener("scroll", function () {
+
+        if (!ticking) {
+
+            requestAnimationFrame(function () {
+
+                checkAnimations();
+
+                ticking = false;
+
+            });
+
+            ticking = true;
+
+        }
+
+    }, {
+        passive: true
+    });
+
+
+    // ==========================================
+    // INITIAL
+    // ==========================================
+
+    checkAnimations();
+
+});
+    </script>
+</body>
+
+</html>
