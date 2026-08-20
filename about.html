@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-[#04535c]">
+            <div class="w-full max-w-[1420px] mx-auto px-4">
+                <!-- top header -->
+                <div class="W-fill py-4 flex flex-col md:flex-row justify-between items-center-safe gap-4 md:gap-20">
+
+                    <div class="website-logo">
+                        <img class="w-40 md:w-50 w-100" src="assets/images/logo-white.svg" alt="">
+                    </div>
+
+                    <div class="relative w-full max-w-[647px] order-3 md:order-none">
+                        <input type="text"
+                            class="h-12 border rounded-full w-full bg-[#fff] border-[gray] py-3 ps-[48px] pe-4 placeholder:text-lg placeholder:text-[#919eab]"
+                            placeholder="search for the items">
+
+                        <div class="absolute top-[6px] left-[13px]">
+                            <i class="ri-search-line text-[24px] text-[#919eab]"></i>
+                        </div>
+                    </div>
+
+                    <div class="gap-4 md:gap-6 flex w-full md:w-auto justify-center md:justify-normal">
+
+                        <div class="flex items-center-safe gap-4">
+                            <div class="size-12 bg-[#aaf27f] rounded-full flex items-center-safe justify-center">
+                                <i class="ri-shopping-bag-4-line text-[24px] text-[#04535c]"></i>
+                            </div>
+
+                            <!-- <div>
+                            <div class="flex justify-between text-[#fff]">
+                                <p>Card</p>                           
+                            </div>
+                            <div class="text-[#fff] text-[16px]">0-items</div>
+                        </div> -->
+                        </div>
+
+                        <div class="flex items-center-safe gap-4">
+                            <div class="size-12 bg-[#aaf27f] rounded-full flex items-center-safe justify-center">
+                                <i class="ri-rotate-lock-line text-[24px] text-[#04535c]"></i>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-[#fff]">
+                                    <p>Account</p>
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                                <div class="text-[#fff] text-[16px]">Sign in/ Sign Up</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav start -->
+        <div class="border-b border-gray-300">
+            <div
+                class="w-full max-w-[1420px] mx-auto px-4 min-h-[73px] py-3 md:py-0 flex flex-col md:flex-row items-center justify-between gap-4">
+
+                <!-- Navigation -->
+                <div class="w-full md:w-auto overflow-x-auto">
+                    <ul class="flex text-[16px] min-w-max">
+
+                        <a href="index.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
+                            <li>Home</li>
+                        </a>
+
+                        <a href="about.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
+                            <li>About</li>
+                        </a>
+
+                        <a href="" class="px-4 md:px-6 py-3 font-medium hover:underline">
+                            <li>Shop</li>
+                        </a>
+
+                        <a href="" class="px-4 md:px-6 py-3 font-medium hover:underline">
+                            <li>Mega Menu</li>
+                        </a>
+
+                        <a href="" class="px-4 md:px-6 py-3 font-medium hover:underline">
+                            <li>Pages</li>
+                        </a>
+
+                        <a href="" class="px-4 md:px-6 py-3 font-medium hover:underline">
+                            <li>Contact</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="flex items-center-safe gap-4 w-full md:w-auto justify-center md:justify-start shrink-0"
+                    style="display: none;">
+
+                    <div class="size-12 bg-[#f7f8f9] rounded-full flex items-center-safe justify-center shrink-0">
+
+                        <i class="ri-customer-service-2-fill text-[24px] text-[#000]"></i>
+
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-[#000]">
+                            <p>24/7 Support</p>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <div class="text-[#000] text-[16px]">
+                            888-777-999
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="py-3 bg-[#fff] sm:py-3 md:py-6 xl:py-10 2xl:py-12">
+        <div class="w-full max-w-[1420px] mx-auto px-4">
+            <div class="flex gap-3">
+                <div class="flex gap-2">
+                    <a href="#"><svg fill="none" height="20" viewBox="0 0 20 20" width="20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37906_134696)">
+                                <path
+                                    d="M12.5 14.1641C11.8337 14.6827 10.9585 14.9974 10 14.9974C9.04146 14.9974 8.16627 14.6827 7.5 14.1641"
+                                    stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+                                <path
+                                    d="M1.95933 11.0086C1.66515 9.09426 1.51805 8.13709 1.87997 7.28854C2.24189 6.43999 3.04486 5.85942 4.65079 4.69828L5.85066 3.83073C7.84841 2.38628 8.84729 1.66406 9.99984 1.66406C11.1524 1.66406 12.1513 2.38628 14.149 3.83073L15.3489 4.69828C16.9548 5.85942 17.7578 6.43999 18.1197 7.28854C18.4816 8.13709 18.3345 9.09426 18.0403 11.0086L17.7895 12.6411C17.3724 15.3548 17.1639 16.7117 16.1907 17.5212C15.2174 18.3307 13.7946 18.3307 10.9488 18.3307H9.05082C6.20511 18.3307 4.78226 18.3307 3.809 17.5212C2.83575 16.7117 2.62723 15.3548 2.21019 12.6411L1.95933 11.0086Z"
+                                    stroke="#212529" stroke-linejoin="round" stroke-width="1.5"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37906_134696">
+                                    <rect fill="white" height="20" width="20"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                    <a href="index.html">Home</a>
+                </div>
+                |
+                <div class="about-page text-gray-500">About</div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class=" bg-[#fff] sm:py-0 ">
+        <div class="w-full max-w-[1420px] mx-auto px-4">
+            <div class="grid grid-cols-1 gap-6 xl:grid-cols-12">
+                <div class="xl:col-span-8">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 justify-between">
+                        <div class="about-heading lg:py-12   sm:py-0">
+                            <div class="about-main-heading">
+                                <h1 class="lg:text-5xl font-bold max-w-[550px] leading-16 mb-3">Empowering Better
+                                    Health at Home </h1>
+                            </div>
+                            <div class="about-description">
+
+                                <div class="about-sub-heading">
+                                    <h4 class="font-bold text-gray-900 text-xl mb-3">Our Mission</h4>
+                                    <p class="text-gray-500 leading-6 max-w-[640px] mb-3 ">To make quality healthcare
+                                        products
+                                        accessible, affordable, and reliable for every household. We are committed to
+                                        helping individuals and families take control of their health with ease,
+                                        confidence,
+                                        and care—right from the comfort of home.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="about-sub-heading">
+                                    <h4 class="font-bold text-gray-900 text-xl mb-3">Our Vision
+                                    </h4>
+                                    <p class="text-gray-500 leading-6 max-w-[640px]">To become a trusted name in home
+                                        healthcare by simplifying the way people care for themselves and their loved
+                                        ones—empowering healthier lives through innovation, compassion, and convenience.
+
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="about-top-small-img">
+                            <img class="rounded-2xl h-auto w-full object-cover" src="assets/images/about-1.webp" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="about-services ">
+                        <div class="border border-gray-200 grid  rounded-2xl mt-10 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center   p-6 border-r border-gray-300">
+                                <span class="font-bold text-gray-900 text-[32px]">12+</span>
+                                <span class="text-gray-500 text-center">Years of Trusted Service</span>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center   p-6 border-r border-gray-300">
+                                <span class="font-bold text-gray-900 text-[32px]">1M
+                                </span>
+                                <span class="text-gray-500 text-center">Orders Delivered Safely</span>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center   p-6 border-r border-gray-300">
+                                <span class="font-bold text-gray-900 text-[32px]">10K+
+                                </span>
+                                <span class="text-gray-500 text-center">Verified 5-Star Reviews</span>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center   p-6  border-gray-300">
+                                <span class="font-bold text-gray-900 text-[32px]">99%
+                                </span>
+                                <span class="text-gray-500 text-center">Customer Satisfaction Rate</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="about-top-image xl:col-span-4  ">
+                    <img class="h-auto w-full rounded-2xl" src="assets/images/about-2.webp" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-12 bg-[#fff] ">
+        <div class="w-full max-w-[1420px] mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-22 ">
+                <div class="lg:col-span-5">
+                    <div class="free-delievery">
+                        <h2 class="text-gray-900 font-bold text-[32px] mb-10">Faster Free Delivery</h2>
+                        <p class="mb-4 text-gray-500 leading-6 ">Experience the ultimate convenience with
+                            our Faster Free Delivery service—designed to bring your orders to your doorstep quickly and
+                            without any extra cost. Whether you're ordering essentials or gifts, we make sure you get
+                            them faster than <ever class="s"></ever>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <span class="text-gray-500 mb-4">Why You'll Love It:
+                        </span>
+                    </div>
+                    <div class="about-check-list">
+                        <div class="check-list flex gap-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12C1.25 6.06294 6.06294 1.25 12 1.25ZM16.8779 8.02051C16.6129 7.53595 16.0051 7.35807 15.5205 7.62305C13.692 8.62303 12.1798 10.5526 11.1631 12.1094C10.7874 12.6847 10.4658 13.23 10.209 13.6914C9.96946 13.459 9.73269 13.2566 9.52051 13.0889C9.24286 12.8694 8.99272 12.6965 8.81055 12.5771L8.49512 12.3818C8.01542 12.1084 7.40542 12.2753 7.13184 12.7549C6.85829 13.2345 7.0254 13.8445 7.50488 14.1182L7.71484 14.25C7.85766 14.3436 8.05796 14.4824 8.28027 14.6582C8.73776 15.0199 9.23134 15.4943 9.54199 16.0137C9.73266 16.3323 10.0843 16.5194 10.4551 16.499C10.8259 16.4786 11.1551 16.2537 11.3096 15.916L11.4082 15.7109C11.4759 15.5725 11.577 15.3695 11.709 15.1201C11.9735 14.6204 12.3586 13.9371 12.8379 13.2031C13.8212 11.6975 15.1092 10.1278 16.4805 9.37793C16.9648 9.11292 17.1427 8.50495 16.8779 8.02051Z"
+                                    fill="#04535C"></path>
+                            </svg>
+                            <p class="text-gray-500">Absolutely Free: No delivery fees, no hidden charges—just fast,
+                                reliable service.</p>
+
+
+                        </div>
+                        <div class="check-list flex gap-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12C1.25 6.06294 6.06294 1.25 12 1.25ZM16.8779 8.02051C16.6129 7.53595 16.0051 7.35807 15.5205 7.62305C13.692 8.62303 12.1798 10.5526 11.1631 12.1094C10.7874 12.6847 10.4658 13.23 10.209 13.6914C9.96946 13.459 9.73269 13.2566 9.52051 13.0889C9.24286 12.8694 8.99272 12.6965 8.81055 12.5771L8.49512 12.3818C8.01542 12.1084 7.40542 12.2753 7.13184 12.7549C6.85829 13.2345 7.0254 13.8445 7.50488 14.1182L7.71484 14.25C7.85766 14.3436 8.05796 14.4824 8.28027 14.6582C8.73776 15.0199 9.23134 15.4943 9.54199 16.0137C9.73266 16.3323 10.0843 16.5194 10.4551 16.499C10.8259 16.4786 11.1551 16.2537 11.3096 15.916L11.4082 15.7109C11.4759 15.5725 11.577 15.3695 11.709 15.1201C11.9735 14.6204 12.3586 13.9371 12.8379 13.2031C13.8212 11.6975 15.1092 10.1278 16.4805 9.37793C16.9648 9.11292 17.1427 8.50495 16.8779 8.02051Z"
+                                    fill="#04535C"></path>
+                            </svg>
+                            <p class="text-gray-500">Real-Time Tracking: Stay updated every step of the way with live
+                                order tracking.</p>
+
+
+                        </div>
+                        <div class="check-list flex gap-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12C1.25 6.06294 6.06294 1.25 12 1.25ZM16.8779 8.02051C16.6129 7.53595 16.0051 7.35807 15.5205 7.62305C13.692 8.62303 12.1798 10.5526 11.1631 12.1094C10.7874 12.6847 10.4658 13.23 10.209 13.6914C9.96946 13.459 9.73269 13.2566 9.52051 13.0889C9.24286 12.8694 8.99272 12.6965 8.81055 12.5771L8.49512 12.3818C8.01542 12.1084 7.40542 12.2753 7.13184 12.7549C6.85829 13.2345 7.0254 13.8445 7.50488 14.1182L7.71484 14.25C7.85766 14.3436 8.05796 14.4824 8.28027 14.6582C8.73776 15.0199 9.23134 15.4943 9.54199 16.0137C9.73266 16.3323 10.0843 16.5194 10.4551 16.499C10.8259 16.4786 11.1551 16.2537 11.3096 15.916L11.4082 15.7109C11.4759 15.5725 11.577 15.3695 11.709 15.1201C11.9735 14.6204 12.3586 13.9371 12.8379 13.2031C13.8212 11.6975 15.1092 10.1278 16.4805 9.37793C16.9648 9.11292 17.1427 8.50495 16.8779 8.02051Z"
+                                    fill="#04535C"></path>
+                            </svg>
+                            <p class="text-gray-500">Reliable Delivery Partners: We've partnered with trusted couriers
+                                to ensure your packages.</p>
+
+
+                        </div>
+                        <div class="check-list flex gap-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12C1.25 6.06294 6.06294 1.25 12 1.25ZM16.8779 8.02051C16.6129 7.53595 16.0051 7.35807 15.5205 7.62305C13.692 8.62303 12.1798 10.5526 11.1631 12.1094C10.7874 12.6847 10.4658 13.23 10.209 13.6914C9.96946 13.459 9.73269 13.2566 9.52051 13.0889C9.24286 12.8694 8.99272 12.6965 8.81055 12.5771L8.49512 12.3818C8.01542 12.1084 7.40542 12.2753 7.13184 12.7549C6.85829 13.2345 7.0254 13.8445 7.50488 14.1182L7.71484 14.25C7.85766 14.3436 8.05796 14.4824 8.28027 14.6582C8.73776 15.0199 9.23134 15.4943 9.54199 16.0137C9.73266 16.3323 10.0843 16.5194 10.4551 16.499C10.8259 16.4786 11.1551 16.2537 11.3096 15.916L11.4082 15.7109C11.4759 15.5725 11.577 15.3695 11.709 15.1201C11.9735 14.6204 12.3586 13.9371 12.8379 13.2031C13.8212 11.6975 15.1092 10.1278 16.4805 9.37793C16.9648 9.11292 17.1427 8.50495 16.8779 8.02051Z"
+                                    fill="#04535C"></path>
+                            </svg>
+                            <p class="text-gray-500">Weekend & Evening Delivery: Get your items when it's most
+                                convenient for you.</p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="free-delievery-paragraph">
+                        <p class="text-gray-500">Say goodbye to long waits and shipping fees. With Faster Free Delivery,
+                            we're raising the standard—fast, seamless, and 100% free.</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 flex flex-col sm:flex-row items-center gap-5 ">
+                    <div class="about-img-4">
+                        <img src="assets/images/about-image-4.webp" alt="">
+                    </div>
+                    <div class="about-image-5 content-center">
+                        <img class="rounded-2xl" src="assets/images/about-5.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="py-12 bg-[#fff] ">
+        <div class="w-full max-w-[1420px] mx-auto px-4">
+            <div class="border-gray-200 border-y bg-white py-8">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 2xl:gap-11">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="bg-[#04535c] text-[#fff] inline-flex size-12 items-center justify-center rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <circle cx="17" cy="18" r="2" stroke="currentColor" stroke-width="1.5"></circle>
+                                <circle cx="7" cy="18" r="2" stroke="currentColor" stroke-width="1.5"></circle>
+                                <path
+                                    d="M11 17H15M13.5 7H14.4429C15.7533 7 16.4086 7 16.9641 7.31452C17.5196 7.62904 17.89 8.20972 18.6308 9.37107C19.1502 10.1854 19.6955 10.7765 20.4622 11.3024C21.2341 11.8318 21.6012 12.0906 21.8049 12.506C22 12.9038 22 13.375 22 14.3173C22 15.5596 22 16.1808 21.651 16.5755C21.636 16.5925 21.6207 16.609 21.6049 16.625C21.2375 17 20.6594 17 19.503 17H19"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M13 7L13.9942 9.48556C14.4813 10.7034 14.7249 11.3123 15.2328 11.6561C15.7407 12 16.3965 12 17.7081 12L21 12"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M4.86957 17C3.51684 17 2.84048 17 2.42024 16.5607C2 16.1213 2 15.4142 2 14L2 7C2 5.58579 2 4.87868 2.42024 4.43934C2.84048 4 3.51684 4 4.86957 4L10.1304 4C11.4832 4 12.1595 4 12.5798 4.43934C13 4.87868 13 5.58579 13 7L13 17L8.69565 17"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-gray-secondary text-base leading-6 font-normal">
+                                Shipping to
+                            </p>
+                            <p class="text-gray-primary font-medium">Over 200+ Countries</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="bg-[#04535c] text-[#fff]  inline-flex size-12 items-center justify-center rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M11.9982 2C8.99043 2 7.04018 4.01899 4.73371 4.7549C3.79589 5.05413 3.32697 5.20374 3.1372 5.41465C2.94743 5.62556 2.89186 5.93375 2.78072 6.55013C1.59143 13.146 4.1909 19.244 10.3903 21.6175C11.0564 21.8725 11.3894 22 12.0015 22C12.6135 22 12.9466 21.8725 13.6126 21.6175C19.8116 19.2439 22.4086 13.146 21.219 6.55013C21.1078 5.93364 21.0522 5.6254 20.8624 5.41449C20.6726 5.20358 20.2037 5.05405 19.2659 4.75499C16.9585 4.01915 15.0061 2 11.9982 2Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M9 13C9 13 10 13 11 15C11 15 14.1765 10 17 9" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-gray-primary text-base leading-6 font-normal">
+                                100% Secure
+                            </p>
+                            <p class="text-gray-secondary font-medium">Checkout</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="bg-[#04535c] text-[#fff]  inline-flex size-12 items-center justify-center rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 10.8045C17 10.4588 17 10.286 17.052 10.132C17.2032 9.68444 17.6018 9.51076 18.0011 9.32888C18.45 9.12442 18.6744 9.02219 18.8968 9.0042C19.1493 8.98378 19.4022 9.03818 19.618 9.15929C19.9041 9.31984 20.1036 9.62493 20.3079 9.87302C21.2513 11.0188 21.7229 11.5918 21.8955 12.2236C22.0348 12.7334 22.0348 13.2666 21.8955 13.7764C21.6438 14.6979 20.8485 15.4704 20.2598 16.1854C19.9587 16.5511 19.8081 16.734 19.618 16.8407C19.4022 16.9618 19.1493 17.0162 18.8968 16.9958C18.6744 16.9778 18.45 16.8756 18.0011 16.6711C17.6018 16.4892 17.2032 16.3156 17.052 15.868C17 15.714 17 15.5412 17 15.1955V10.8045Z"
+                                    stroke="currentColor" stroke-width="1.5"></path>
+                                <path
+                                    d="M7 10.8046C7 10.3694 6.98778 9.97821 6.63591 9.6722C6.50793 9.5609 6.33825 9.48361 5.99891 9.32905C5.55001 9.12458 5.32556 9.02235 5.10316 9.00436C4.43591 8.9504 4.07692 9.40581 3.69213 9.87318C2.74875 11.019 2.27706 11.5919 2.10446 12.2237C1.96518 12.7336 1.96518 13.2668 2.10446 13.7766C2.3562 14.6981 3.15152 15.4705 3.74021 16.1856C4.11129 16.6363 4.46577 17.0475 5.10316 16.996C5.32556 16.978 5.55001 16.8757 5.99891 16.6713C6.33825 16.5167 6.50793 16.4394 6.63591 16.3281C6.98778 16.0221 7 15.631 7 15.1957V10.8046Z"
+                                    stroke="currentColor" stroke-width="1.5"></path>
+                                <path d="M5 9C5 5.68629 8.13401 3 12 3C15.866 3 19 5.68629 19 9" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M19 17V17.8C19 19.5673 17.2091 21 15 21H13" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-gray-primary text-base leading-6 font-normal">
+                                Outstanding
+                            </p>
+                            <p class="text-gray-secondary font-medium">Support</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="bg-[#04535c] text-[#fff]  inline-flex size-12 items-center justify-center rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M12.4791 2.19418L14.2389 5.74288C14.4789 6.23687 15.1188 6.7107 15.6587 6.80143L18.8484 7.33575C20.8882 7.67853 21.3681 9.17059 19.8983 10.6425L17.4186 13.1427C16.9986 13.5661 16.7686 14.3827 16.8986 14.9675L17.6085 18.0625C18.1685 20.5123 16.8786 21.46 14.7289 20.1796L11.7392 18.3952C11.1992 18.0726 10.3093 18.0726 9.7594 18.3952L6.76973 20.1796C4.62997 21.46 3.33011 20.5022 3.89005 18.0625L4.59997 14.9675C4.72996 14.3827 4.49998 13.5661 4.08003 13.1427L1.6003 10.6425C0.140465 9.17059 0.610413 7.67853 2.65019 7.33575L5.83984 6.80143C6.36978 6.7107 7.00971 6.23687 7.24968 5.74288L9.00949 2.19418C9.96938 0.268607 11.5292 0.268607 12.4791 2.19418Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-gray-primary text-base leading-6 font-normal">
+                                Over 9K+ 5-Star
+                            </p>
+                            <p class="text-gray-secondary font-medium">Genuine Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="bg-[#fff] py-12">
+        <div class="w-full max-w-[1420px] mx-auto px-4">
+            <div class="flex flex-col justify-between gap-5 xl:flex-row">
+                <div class="xl:w-4/12 2xl:w-3/12">
+                    <a class="mb-5 block" href="index.html">
+                        <img class="w-50 " src="assets/images/logo-green.svg" alt="">
+                    </a>
+                    <p class="mb-5 md:pr-10">
+                        From Our Trusted Store to Your Doorstep, Delivering Quality with
+                        Convenience
+                    </p>
+                    <div class="mb-5 flex items-center gap-4">
+                        <a href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                    stroke="#212529" stroke-linejoin="round" stroke-width="1.5"></path>
+                                <path
+                                    d="M17 8.75C17.4142 8.75 17.75 8.41421 17.75 8C17.75 7.58579 17.4142 7.25 17 7.25V8V8.75ZM16 8V8.75V8ZM11.25 21.5C11.25 21.9142 11.5858 22.25 12 22.25C12.4142 22.25 12.75 21.9142 12.75 21.5H12H11.25ZM10 13.25C9.58579 13.25 9.25 13.5858 9.25 14C9.25 14.4142 9.58579 14.75 10 14.75V14V13.25ZM15 14.75C15.4142 14.75 15.75 14.4142 15.75 14C15.75 13.5858 15.4142 13.25 15 13.25V14V14.75ZM17 8V7.25H16V8V8.75H17V8ZM12 12H11.25V21.5H12H12.75V12H12ZM16 8V7.25C15.0784 7.25 14.3117 7.24841 13.7055 7.32991C13.0777 7.41432 12.5109 7.59999 12.0555 8.05546L12.5858 8.58579L13.1161 9.11612C13.2464 8.9858 13.4439 8.87858 13.9054 8.81654C14.3884 8.75159 15.036 8.75 16 8.75V8ZM12 12H12.75C12.75 11.036 12.7516 10.3884 12.8165 9.90539C12.8786 9.44393 12.9858 9.24643 13.1161 9.11612L12.5858 8.58579L12.0555 8.05546C11.6 8.51093 11.4143 9.07773 11.3299 9.70552C11.2484 10.3117 11.25 11.0784 11.25 12H12ZM10 14V14.75H15V14V13.25H10V14Z"
+                                    fill="#212529"></path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 21L10.5484 13.4516M10.5484 13.4516L3 3H8L13.4516 10.5484M10.5484 13.4516L16 21H21L13.4516 10.5484M21 3L13.4516 10.5484"
+                                    stroke="#212529" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                    stroke="#212529" stroke-linejoin="round" stroke-width="1.5"></path>
+                                <path
+                                    d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                                    stroke="#212529" stroke-width="1.5"></path>
+                                <path d="M17.5078 6.5L17.4988 6.5" stroke="#212529" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"></path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10V17" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"></path>
+                                <path
+                                    d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
+                                    stroke="#212529" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                </path>
+                                <path d="M7.00801 7L6.99902 7" stroke="#212529" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                    stroke="#212529" stroke-linejoin="round" stroke-width="1.5"></path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 11L8 21" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"></path>
+                                <path
+                                    d="M9.97368 16.5724C10.5931 16.8473 11.2787 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 12.9108 7.24367 13.7646 7.66921 14.5"
+                                    stroke="#212529" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                </path>
+                                <circle cx="12" cy="12" r="10" stroke="#212529" stroke-width="1.5"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6 md:grid-cols-12 xl:w-8/12 2xl:w-8/12">
+                    <div class="md:col-span-3">
+                        <h4 class="mb-5 text-lg font-medium">Menu</h4>
+                        <nav>
+                            <ul class="text-gray-500 space-y-4 text-base">
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="top-banner-with-1-col.html">Delivery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="md:col-span-3">
+                        <h4 class="mb-5 text-lg font-medium">Category</h4>
+                        <nav>
+                            <ul class="text-gray-500 space-y-4 text-base">
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">Grocery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">Bakery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">Ice-cream
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary-main text-base transition-all hover:underline"
+                                        href="#">Energy Drinks
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-span-full md:col-span-6">
+                        <h4 class="mb-5 text-lg font-medium">Customer Services</h4>
+                        <ul class="space-y-4">
+                            <li class="text-gray-500 flex items-center gap-2 text-base">
+                                <svg class="shrink-0" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.77762 11.9424C2.8296 10.2893 2.37185 8.93948 2.09584 7.57121C1.68762 5.54758 2.62181 3.57081 4.16938 2.30947C4.82345 1.77638 5.57323 1.95852 5.96 2.6524L6.83318 4.21891C7.52529 5.46057 7.87134 6.08139 7.8027 6.73959C7.73407 7.39779 7.26737 7.93386 6.33397 9.00601L3.77762 11.9424ZM3.77762 11.9424C5.69651 15.2883 8.70784 18.3013 12.0576 20.2224M12.0576 20.2224C13.7107 21.1704 15.0605 21.6282 16.4288 21.9042C18.4524 22.3124 20.4292 21.3782 21.6905 19.8306C22.2236 19.1766 22.0415 18.4268 21.3476 18.04L19.7811 17.1668C18.5394 16.4747 17.9186 16.1287 17.2604 16.1973C16.6022 16.2659 16.0661 16.7326 14.994 17.666L12.0576 20.2224Z"
+                                        stroke="#495057" stroke-linejoin="round" stroke-width="1.5"></path>
+                                </svg>
+                                +1 (555) 666-77-88
+                            </li>
+                            <li class="text-gray-500 flex items-center gap-2 text-base">
+                                <svg class="shrink-0" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6177 21.367C13.1841 21.773 12.6044 22 12.0011 22C11.3978 22 10.8182 21.773 10.3845 21.367C6.41302 17.626 1.09076 13.4469 3.68627 7.37966C5.08963 4.09916 8.45834 2 12.0011 2C15.5439 2 18.9126 4.09916 20.316 7.37966C22.9082 13.4393 17.599 17.6389 13.6177 21.367Z"
+                                        stroke="#495057" stroke-width="1.5"></path>
+                                    <path
+                                        d="M15.5 11C15.5 12.933 13.933 14.5 12 14.5C10.067 14.5 8.5 12.933 8.5 11C8.5 9.067 10.067 7.5 12 7.5C13.933 7.5 15.5 9.067 15.5 11Z"
+                                        stroke="#495057" stroke-width="1.5"></path>
+                                </svg>
+                                help@company.com
+                            </li>
+                            <li class="text-gray-500 flex items-center gap-2 text-base">
+                                <svg class="shrink-0" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"
+                                        stroke="#495057" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"></path>
+                                    <path
+                                        d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                                        stroke="#495057" stroke-linejoin="round" stroke-width="1.5"></path>
+                                </svg>
+                                2972 Westheimer Rd. Santa Ana, Illinois 85486
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
