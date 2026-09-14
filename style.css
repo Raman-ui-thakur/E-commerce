@@ -11,7 +11,6 @@ padding: 48px 0;
 
 
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     border-bottom: 1px solid #ddd !important;
   color: #444;
@@ -25,7 +24,6 @@ padding: 48px 0;
 }
 
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
@@ -40,7 +38,7 @@ padding: 48px 0;
   transition: max-height 0.2s ease-out;
 }
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795'; 
   font-size: 13px;
   color: #777;
   float: right;
@@ -48,5 +46,25 @@ padding: 48px 0;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
 }
+
+ /* Hide scrollbar */
+    .products-slider {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .products-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Prevent cards from shrinking */
+    .products-container {
+        flex-shrink: 0;
+    }
+
+    /* Smooth scrolling */
+    .products-slider {
+        scroll-behavior: smooth;
+    }
