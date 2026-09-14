@@ -12,14 +12,16 @@
 </head>
 
 <body>
-    <header>
+      <header>
         <div class="bg-[#04535c]">
             <div class="w-full max-w-[1420px] mx-auto px-4">
                 <!-- top header -->
                 <div class="W-fill py-4 flex flex-col md:flex-row justify-between items-center-safe gap-4 md:gap-20">
+
                     <div class="website-logo">
                         <img class="w-40 md:w-50 w-100" src="assets/images/logo-white.svg" alt="">
                     </div>
+
                     <div class="relative w-full max-w-[647px] order-3 md:order-none">
                         <input type="text"
                             class="h-12 border rounded-full w-full bg-[#fff] border-[gray] py-3 ps-[48px] pe-4 placeholder:text-lg placeholder:text-[#919eab]"
@@ -29,11 +31,14 @@
                             <i class="ri-search-line text-[24px] text-[#919eab]"></i>
                         </div>
                     </div>
+
                     <div class="gap-4 md:gap-6 flex w-full md:w-auto justify-center md:justify-normal">
+
                         <div class="flex items-center-safe gap-4">
                             <div class="size-12 bg-[#aaf27f] rounded-full flex items-center-safe justify-center">
                                 <i class="ri-shopping-bag-4-line text-[24px] text-[#04535c]"></i>
                             </div>
+
                             <!-- <div>
                             <div class="flex justify-between text-[#fff]">
                                 <p>Card</p>                           
@@ -41,18 +46,77 @@
                             <div class="text-[#fff] text-[16px]">0-items</div>
                         </div> -->
                         </div>
+
                         <div class="flex items-center-safe gap-4">
                             <div class="size-12 bg-[#aaf27f] rounded-full flex items-center-safe justify-center">
                                 <i class="ri-rotate-lock-line text-[24px] text-[#04535c]"></i>
                             </div>
-                            <div class="sign-up">
-                                <div class="flex justify-center text-[#fff]">
-                                    <p>Account</p>
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </div>
-                                <div class="text-[#fff] text-[16px]">Sign in/ Sign Up</div>
-                            </div>
+
+                          <div class="sign-up relative group">
+
+    <!-- Account Button -->
+    <button type="button"
+        class="cursor-pointer text-white w-full"
+        onclick="toggleAccountMenu()">
+
+        <div class="flex justify-center items-center gap-1">
+            <p>Account</p>
+            <i id="accountArrow"
+                class="ri-arrow-down-s-line transition-transform duration-200 md:group-hover:rotate-180">
+            </i>
+        </div>
+
+        <div class="text-white text-[16px]">
+            Sign in / Sign Up
+        </div>
+
+    </button>
+
+
+    <!-- Dropdown -->
+    <div id="accountMenu"
+        class="overflow-hidden absolute right-0 top-full mt-3 w-48
+        bg-white rounded-xl shadow-lg
+
+        opacity-0 invisible translate-y-2
+
+        md:group-hover:opacity-100
+        md:group-hover:visible
+        md:group-hover:translate-y-0
+
+        transition-all duration-200 z-50">
+
+        <a href="create-account.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Sign In
+        </a>
+
+        <a href="signin.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Sign Up
+        </a>
+
+        <a href="create-account.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Create Account
+        </a>
+
+        <a href="verification.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Verification
+        </a>
+
+        <a href="forget-password.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Forget Password
+        </a>
+
+    </div>
+
+</div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -62,33 +126,45 @@
         <div class="border-b border-gray-300">
             <div
                 class="w-full max-w-[1420px] mx-auto px-4 min-h-[73px] py-3 md:py-0 flex flex-col md:flex-row items-center justify-between gap-4">
+
                 <!-- Navigation -->
                 <div class="w-full md:w-auto overflow-x-auto">
                     <ul class="flex text-[16px] min-w-max">
+
                         <a href="index.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
                             <li>Home</li>
                         </a>
+
                         <a href="about.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
                             <li>About</li>
                         </a>
+
                         <a href="shop.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
                             <li>Shop</li>
                         </a>
+
                         <a href="blog.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
                             <li>Blog</li>
                         </a>
 
+
                         <a href="contact.html" class="px-4 md:px-6 py-3 font-medium hover:underline">
                             <li>Contact</li>
                         </a>
+
                     </ul>
                 </div>
+
                 <!-- Support -->
                 <div class="flex items-center-safe gap-4 w-full md:w-auto justify-center md:justify-start shrink-0"
                     style="display: none;">
+
                     <div class="size-12 bg-[#f7f8f9] rounded-full flex items-center-safe justify-center shrink-0">
+
                         <i class="ri-customer-service-2-fill text-[24px] text-[#000]"></i>
+
                     </div>
+
                     <div>
                         <div class="flex justify-between text-[#000]">
                             <p>24/7 Support</p>
@@ -99,12 +175,12 @@
                             888-777-999
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </header>
-
-
 
     <section class="py-3 bg-[#fff] sm:py-3 md:py-6 xl:py-10 2xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
@@ -518,6 +594,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

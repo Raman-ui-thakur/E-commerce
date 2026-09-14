@@ -222,3 +222,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+function toggleAccountMenu() {
+    const menu = document.getElementById('accountMenu');
+    const arrow = document.getElementById('accountArrow');
+
+    menu.classList.toggle('opacity-0');
+    menu.classList.toggle('invisible');
+    menu.classList.toggle('translate-y-2');
+
+    arrow.classList.toggle('rotate-180');
+}

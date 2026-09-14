@@ -38,6 +38,13 @@
                             <div class="size-12 bg-[#aaf27f] rounded-full flex items-center-safe justify-center">
                                 <i class="ri-shopping-bag-4-line text-[24px] text-[#04535c]"></i>
                             </div>
+
+                            <!-- <div>
+                            <div class="flex justify-between text-[#fff]">
+                                <p>Card</p>                           
+                            </div>
+                            <div class="text-[#fff] text-[16px]">0-items</div>
+                        </div> -->
                         </div>
 
                         <div class="flex items-center-safe gap-4">
@@ -45,13 +52,69 @@
                                 <i class="ri-rotate-lock-line text-[24px] text-[#04535c]"></i>
                             </div>
 
-                            <div>
-                                <div class="flex justify-center text-[#fff]">
-                                    <p>Account</p>
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </div>
-                                <div class="text-[#fff] text-[16px]">Sign in/ Sign Up</div>
-                            </div>
+                          <div class="sign-up relative group">
+
+    <!-- Account Button -->
+    <button type="button"
+        class="cursor-pointer text-white w-full"
+        onclick="toggleAccountMenu()">
+
+        <div class="flex justify-center items-center gap-1">
+            <p>Account</p>
+            <i id="accountArrow"
+                class="ri-arrow-down-s-line transition-transform duration-200 md:group-hover:rotate-180">
+            </i>
+        </div>
+
+        <div class="text-white text-[16px]">
+            Sign in / Sign Up
+        </div>
+
+    </button>
+
+
+    <!-- Dropdown -->
+    <div id="accountMenu"
+        class="overflow-hidden absolute right-0 top-full mt-3 w-48
+        bg-white rounded-xl shadow-lg
+
+        opacity-0 invisible translate-y-2
+
+        md:group-hover:opacity-100
+        md:group-hover:visible
+        md:group-hover:translate-y-0
+
+        transition-all duration-200 z-50">
+
+        <a href="create-account.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Sign In
+        </a>
+
+        <a href="signin.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Sign Up
+        </a>
+
+        <a href="create-account.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Create Account
+        </a>
+
+        <a href="verification.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Verification
+        </a>
+
+        <a href="forget-password.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Forget Password
+        </a>
+
+    </div>
+
+</div>
+
                         </div>
 
                     </div>
@@ -118,7 +181,6 @@
             </div>
         </div>
     </header>
-
 
 
 
@@ -587,6 +649,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 <script>
     var acc = document.getElementsByClassName("accordion");

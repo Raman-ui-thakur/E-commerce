@@ -7,10 +7,7 @@
     <title>E-COM</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -56,13 +53,69 @@
                                 <i class="ri-rotate-lock-line text-[24px] text-[#04535c]"></i>
                             </div>
 
-                            <div class="account-section">
-                                <div class="flex justify-center text-[#fff]">
-                                    <p>Account</p>
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </div>
-                                <div class="text-[#fff] text-[16px]">Sign in/ Sign Up</div>
-                            </div>
+                          <div class="sign-up relative group">
+
+    <!-- Account Button -->
+    <button type="button"
+        class="cursor-pointer text-white w-full"
+        onclick="toggleAccountMenu()">
+
+        <div class="flex justify-center items-center gap-1">
+            <p>Account</p>
+            <i id="accountArrow"
+                class="ri-arrow-down-s-line transition-transform duration-200 md:group-hover:rotate-180">
+            </i>
+        </div>
+
+        <div class="text-white text-[16px]">
+            Sign in / Sign Up
+        </div>
+
+    </button>
+
+
+    <!-- Dropdown -->
+    <div id="accountMenu"
+        class="overflow-hidden absolute right-0 top-full mt-3 w-48
+        bg-white rounded-xl shadow-lg
+
+        opacity-0 invisible translate-y-2
+
+        md:group-hover:opacity-100
+        md:group-hover:visible
+        md:group-hover:translate-y-0
+
+        transition-all duration-200 z-50">
+
+        <a href="create-account.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Sign In
+        </a>
+
+        <a href="signin.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Sign Up
+        </a>
+
+        <a href="create-account.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Create Account
+        </a>
+
+        <a href="verification.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Verification
+        </a>
+
+        <a href="forget-password.html"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-100">
+            Forget Password
+        </a>
+
+    </div>
+
+</div>
+
                         </div>
 
                     </div>
@@ -242,14 +295,14 @@
     </section>
 
     <!-- shop by catagories -->
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex justify-between align-center flex-wrap ">
                 <div class="section_heading_cont">
                     <h3 class="text-[30px] font-black">Shop By Category</h3>
                     <p class="text-gray-500 text-[16px]">Secure a rare 50% valuation on our most-celebrated goods 🔥</p>
                 </div>
-                <a class="py-12 text-gray-900 font-medium" href="">View All+</a>
+                <a class="py-4 lg:py-6 xl:py-6 lg:py-6 xl:py-6 lg:py-6 xl:py-12 text-gray-900 font-medium" href="">View All+</a>
             </div>
             <div class="category_type_slider">
                 <div
@@ -297,7 +350,7 @@
         </div>
     </section>
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex justify-between align-center flex-wrap ">
                 <div class="section_heading_cont">
@@ -306,12 +359,12 @@
                     <p class="text-gray-500 text-[16px]">Heritage quality meeting an unprecedented limited-time offer
                         pricing </p>
                 </div>
-                <a class="py-12 text-gray-900 font-medium" href="">View All+</a>
+                <a class="py-6 lg:py-6 xl:py-12 text-gray-900 font-medium" href="">View All+</a>
             </div>
             <div class="gap-6 grid  2xl:grid-cols-5  xl:grid-cols-4 lg:grid:cols-5 md:grid-cols-3 sm:grid-cols-1">
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-1 (1).webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-1 (1).webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -384,7 +437,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center ">
-                        <img class="mb-3 w-100" src="assets/images/product-2.webp " alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-2.webp " alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -456,7 +509,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-4 (1).webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-4 (1).webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -528,7 +581,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-3.webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-3.webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -600,7 +653,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-1 (1).webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-1 (1).webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -676,7 +729,7 @@
     </section>
 
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
 
             <!-- RESPONSIVE: mobile par column, desktop (lg) par row -->
@@ -711,7 +764,7 @@
                 </div>
 
 
-                <div class="w-full lg:flex-1 grid grid-cols-2 grid-rows-2 gap-2">
+                <div class="gap-2 grid grid-cols-1 lg:flex-1 sm:grid-cols-2 w-full">
 
                     <div class="grid-text-container p-4 sm:p-6 bg-[#b2d4f582] flex flex-col justify-center rounded">
 
@@ -764,7 +817,7 @@
         </div>
     </section>
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex justify-between align-center flex-wrap">
                 <div class="section_heading_cont">
@@ -773,12 +826,12 @@
                     <p class="text-gray-500 text-[16px]">Heritage quality meeting an unprecedented limited-time offer
                         pricing </p>
                 </div>
-                <a class="py-12 text-gray-900 font-medium" href="">View All+</a>
+                <a class="py-6 lg:py-6 xl:py-12 text-gray-900 font-medium" href="">View All+</a>
             </div>
             <div class="gap-6 grid  2xl:grid-cols-5  xl:grid-cols-4 lg:grid:cols-5 md:grid-cols-3 sm:grid-cols-1">
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-1 (1).webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-1 (1).webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -851,7 +904,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-2.webp " alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-2.webp " alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -923,7 +976,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center">
-                        <img class="mb-3 w-100" src="assets/images/product-4 (1).webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-4 (1).webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -995,7 +1048,7 @@
                 </div>
                 <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center ">
-                        <img class="mb-3 w-100" src="assets/images/product-3.webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-3.webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -1065,9 +1118,9 @@
                         </div>
                     </div>
                 </div>
-                <di v class="products-container p-4 border border-gray-200 rounded-lg">
+                <div class="products-container p-4 border border-gray-200 rounded-lg">
                     <div class="image-container flex justify-center ">
-                        <img class="mb-3 w-100" src="assets/images/product-1 (1).webp" alt="">
+                        <img class="mb-3 w-full" src="assets/images/product-1 (1).webp" alt="">
                     </div>
                     <div class="flex flex-col gap-2 ">
                         <a href="#" class="text-gray-secondary text-xs font-normal">Store Name/Category</a>
@@ -1142,7 +1195,7 @@
         </div>
     </section>
 
-    <section class="py-12 hidden md:block">
+    <section class="py-6 lg:py-6 xl:py-12 hidden md:block">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex flex-col lg:flex-row justify-between gap-6 ">
                 <div class="w-full lg:w-auto flex flex-col justify-between gap-6">
@@ -1201,7 +1254,7 @@
         </div>
     </section>
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="section_heading_cont mb-6">
                 <h3 class="text-[30px] font-black text-center">Everyday Essentials
@@ -1665,7 +1718,7 @@
         </div>
     </section>
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="section_heading_cont mb-6">
                 <h3 class="text-[30px] font-black text-center">Tiktok Store
@@ -1675,7 +1728,7 @@
             </div>
             <div class="gap-6 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xl:grid-cols-4">
                 <div class="relative overflow-hidden rounded-2xl">
-                    <img src="assets/images/post-1.webp" class="hover:scale-110 duration-900 w-100" alt="">
+                    <img src="assets/images/post-1.webp" class="hover:scale-110 duration-900 w-full" alt="">
                     <div class="flex gap-3 absolute left-6 bottom-6">
                         <img src="assets/images/img1.webp" alt="">
                         <div class="product-name-links ">
@@ -1685,7 +1738,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-2xl">
-                    <img src="assets/images/post-2.webp" class="hover:scale-110 duration-900 w-100" alt="">
+                    <img src="assets/images/post-2.webp" class="hover:scale-110 duration-900 w-full" alt="">
                     <div class="flex gap-3 absolute left-6 bottom-6">
                         <img src="assets/images/img2.webp" alt="">
                         <div class="product-name-links ">
@@ -1695,7 +1748,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-2xl">
-                    <img src="assets/images/post-3.webp" class="hover:scale-110 duration-900 w-100" alt="">
+                    <img src="assets/images/post-3.webp" class="hover:scale-110 duration-900 w-full" alt="">
                     <div class="flex gap-3 absolute left-6 bottom-6">
                         <img src="assets/images/img3.webp" alt="">
                         <div class="product-name-links ">
@@ -1705,7 +1758,7 @@
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-2xl">
-                    <img src="assets/images/post-4.webp" class="hover:scale-110 duration-900 w-100" alt="">
+                    <img src="assets/images/post-4.webp" class="hover:scale-110 duration-900 w-full" alt="">
                     <div class="flex gap-3 absolute left-6 bottom-6">
                         <img src="assets/images/img4.webp" alt="">
                         <div class="product-name-links ">
@@ -1718,12 +1771,12 @@
 
 
 
-            
+
         </div>
     </section>
 
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex flex-col lg:flex-row gap-6">
 
@@ -1743,7 +1796,7 @@
                         Don’t Miss Up to 50% Off Your Favorite Styles
                     </p>
 
-                    <div class="flex flex-wrap justify-center gap-3 py-8 sm:py-12 px-4">
+                    <div class="flex flex-wrap justify-center gap-3 py-8 sm:py-6 lg:py-6 xl:py-12 px-4">
 
                         <div
                             class="days flex flex-col bg-[#9ee872] size-25 justify-center rounded-2xl p-4 sm:p-6 h-24 sm:h-30 w-24 sm:w-35">
@@ -1789,9 +1842,9 @@
 
 
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
-            <div class="bg-[#04535c] rounded-[24px] px-6 py-12 flex flex-col">
+            <div class="bg-[#04535c] rounded-[24px] px-6 py-6 lg:py-6 xl:py-12 flex flex-col">
 
                 <h2 class="text-3xl font-bold text-white text-center">
                     Value up to 69%
@@ -1805,7 +1858,7 @@
                     <div class="flex flex-col sm:flex-row gap-4 search-input w-full sm:w-auto">
 
                         <input type="search" name="" id="subscribe"
-                            class="h-12 py-2 rounded-lg border-none bg-white px-6 text-base text-gray-900 placeholder-gray-400 w-full sm:w-[450px]"
+                            class="h-12 py-6 rounded-lg border-none bg-white px-6 text-base text-gray-900 placeholder-gray-400 w-full sm:w-[450px]"
                             placeholder="Your email address">
 
                         <a href="#"
@@ -1821,7 +1874,7 @@
         </div>
     </section>
 
-    <section class="py-12">
+    <section class="py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex justify-between align-center items-center flex-wrap">
                 <div class="section_heading_cont">
@@ -1829,7 +1882,7 @@
 
                     </h3>
                 </div>
-                <a class="py-12 text-gray-900 font-medium" href="">View All+</a>
+                <a class="py-6 lg:py-6 xl:py-12 text-gray-900 font-medium" href="">View All+</a>
             </div>
 
             <div class="flex gap-2 gap-6 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xl:grid-cols-4">
@@ -1925,7 +1978,7 @@
     </section>
 
 
-    <section class="py-12 bg-[#aaf27f]">
+    <section class="py-6 lg:py-6 xl:py-12 bg-[#aaf27f]">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex flex-col items-center justify-between gap-5 lg:flex-row">
                 <div class="flex flex-col items-center gap-5 text-center lg:flex-row lg:text-start">
@@ -1973,7 +2026,7 @@
     </section>
 
 
-    <div class="border-gray-200 border-y bg-white py-8  mt-10">
+    <div class="border-gray-200 border-y bg-white py-8  mt-10 px-5">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 2xl:gap-11  max-w-[1420px] mx-auto">
             <div class="flex items-center gap-4">
                 <div class="bg-[#04535c] text-[#fff] inline-flex size-12 items-center justify-center rounded-full">
@@ -2064,7 +2117,7 @@
 
     <!-- footer -->
 
-    <section class="bg-[#fff] py-12">
+    <section class="bg-[#fff] py-6 lg:py-6 xl:py-12">
         <div class="w-full max-w-[1420px] mx-auto px-4">
             <div class="flex flex-col justify-between gap-5 xl:flex-row">
                 <div class="xl:w-4/12 2xl:w-3/12">
@@ -2242,6 +2295,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
